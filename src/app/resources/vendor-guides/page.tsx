@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { ArrowLeftIcon, MagnifyingGlassIcon, ExternalLinkIcon, DocumentTextIcon, VideoCameraIcon, CodeBracketIcon } from '@heroicons/react/24/outline'
+import { ArrowLeftIcon, MagnifyingGlassIcon, ArrowTopRightOnSquareIcon, DocumentTextIcon, VideoCameraIcon, CodeBracketIcon } from '@heroicons/react/24/outline'
 
 interface VendorGuide {
   id: string
@@ -431,7 +431,7 @@ export default function VendorGuides() {
                         <div className="flex items-center">
                           <h5 className="font-medium text-gray-900 dark:text-white text-sm">{resource.title}</h5>
                           {resource.isExternal && (
-                            <ExternalLinkIcon className="w-4 h-4 text-gray-400 ml-2" />
+                            <ArrowTopRightOnSquareIcon className="w-4 h-4 text-gray-400 ml-2" />
                           )}
                         </div>
                         <p className="text-xs text-gray-600 dark:text-gray-400 mt-1">{resource.description}</p>

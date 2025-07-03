@@ -150,7 +150,7 @@ export default function BestPractices() {
                 <div>
                   <h4 className="font-medium text-gray-900 dark:text-white mb-3">Success Metrics</h4>
                   <ul className="space-y-2 text-gray-700 dark:text-gray-300">
-                    <li>• Message processing accuracy (>99.9%)</li>
+                    <li>• Message processing accuracy (&gt;99.9%)</li>
                     <li>• System performance within SLA</li>
                     <li>• Zero data loss incidents</li>
                     <li>• Successful rollback capability</li>
@@ -329,7 +329,7 @@ export default function BestPractices() {
                   Establish clear criteria for when to initiate rollback procedures to minimize system downtime and data loss.
                 </p>
                 <ul className="text-red-700 dark:text-red-300 space-y-1">
-                  <li>• Message processing failure rate > 1%</li>
+                  <li>• Message processing failure rate &gt; 1%</li>
                   <li>• Critical system performance degradation</li>
                   <li>• Data integrity issues detected</li>
                   <li>• Inability to process urgent clinical messages</li>
