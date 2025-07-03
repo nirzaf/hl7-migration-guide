@@ -1,114 +1,273 @@
 'use client'
 
 import Link from 'next/link'
-import { ArrowLeftIcon, DocumentTextIcon, ExclamationTriangleIcon, CheckCircleIcon } from '@heroicons/react/24/outline'
+import { ArrowLeftIcon, DocumentTextIcon, ExclamationTriangleIcon, CheckCircleIcon, ClockIcon, UserGroupIcon } from '@heroicons/react/24/outline'
+import MainLayout from '@/components/layout/MainLayout'
+import Card, { CardContent, CardHeader } from '@/components/ui/Card'
+import Button from '@/components/ui/Button'
 
 export default function ComprehensiveGuide() {
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-      {/* Header */}
-      <header className="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex items-center space-x-4">
-            <Link href="/" className="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
-              <ArrowLeftIcon className="w-5 h-5 mr-2" />
+    <MainLayout>
+      {/* Page Header */}
+      <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center space-x-4 mb-6 animate-fade-in-left">
+            <Link href="/" className="flex items-center text-blue-100 hover:text-white transition-colors group">
+              <ArrowLeftIcon className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform" />
               Back to Home
             </Link>
-            <div className="h-6 w-px bg-gray-300 dark:bg-gray-600"></div>
-            <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Comprehensive HL7 v2.8 Migration Guide</h1>
+          </div>
+
+          <div className="animate-fade-in-up">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              Comprehensive HL7 v2.8 Migration Guide
+            </h1>
+            <p className="text-xl text-blue-100 max-w-3xl">
+              A complete step-by-step guide for healthcare organizations planning to migrate their HL7 v2.x interfaces to HL7 v2.8
+            </p>
+          </div>
+
+          {/* Quick Stats */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 animate-fade-in-up animate-delay-200">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+              <div className="flex items-center">
+                <DocumentTextIcon className="w-8 h-8 mr-3" />
+                <div>
+                  <div className="text-2xl font-bold">50+</div>
+                  <div className="text-blue-100">Pages of Content</div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+              <div className="flex items-center">
+                <ClockIcon className="w-8 h-8 mr-3" />
+                <div>
+                  <div className="text-2xl font-bold">2-6</div>
+                  <div className="text-blue-100">Months Timeline</div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+              <div className="flex items-center">
+                <UserGroupIcon className="w-8 h-8 mr-3" />
+                <div>
+                  <div className="text-2xl font-bold">All</div>
+                  <div className="text-blue-100">Team Roles</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </header>
+      </div>
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Table of Contents */}
-        <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-6 mb-8">
-          <h2 className="text-xl font-semibold text-blue-900 dark:text-blue-100 mb-4 flex items-center">
-            <DocumentTextIcon className="w-6 h-6 mr-2" />
-            Table of Contents
-          </h2>
-          <nav className="space-y-2">
-            <a href="#introduction" className="block text-blue-700 dark:text-blue-300 hover:text-blue-900 dark:hover:text-blue-100 transition-colors">1. Introduction to HL7 v2.8 Migration</a>
-            <a href="#official-docs" className="block text-blue-700 dark:text-blue-300 hover:text-blue-900 dark:hover:text-blue-100 transition-colors">2. Official Documentation and Resources</a>
-            <a href="#technical-differences" className="block text-blue-700 dark:text-blue-300 hover:text-blue-900 dark:hover:text-blue-100 transition-colors">3. Technical Differences and Compatibility</a>
-            <a href="#implementation" className="block text-blue-700 dark:text-blue-300 hover:text-blue-900 dark:hover:text-blue-100 transition-colors">4. Implementation Guidelines</a>
-            <a href="#best-practices" className="block text-blue-700 dark:text-blue-300 hover:text-blue-900 dark:hover:text-blue-100 transition-colors">5. Best Practices and Recommendations</a>
-            <a href="#industry-resources" className="block text-blue-700 dark:text-blue-300 hover:text-blue-900 dark:hover:text-blue-100 transition-colors">6. Industry-Specific Resources</a>
-            <a href="#vendor-guidance" className="block text-blue-700 dark:text-blue-300 hover:text-blue-900 dark:hover:text-blue-100 transition-colors">7. Vendor-Specific Guidance</a>
-          </nav>
-        </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          {/* Sidebar - Table of Contents */}
+          <div className="lg:col-span-1">
+            <div className="sticky top-24">
+              <Card className="glass animate-fade-in-left">
+                <CardHeader>
+                  <h2 className="text-xl font-semibold text-gray-900 dark:text-white flex items-center">
+                    <DocumentTextIcon className="w-6 h-6 mr-2 text-blue-600" />
+                    Table of Contents
+                  </h2>
+                </CardHeader>
+                <CardContent>
+                  <nav className="space-y-3">
+                    {[
+                      { id: 'introduction', title: '1. Introduction to HL7 v2.8 Migration' },
+                      { id: 'official-docs', title: '2. Official Documentation and Resources' },
+                      { id: 'technical-differences', title: '3. Technical Differences and Compatibility' },
+                      { id: 'implementation', title: '4. Implementation Guidelines' },
+                      { id: 'best-practices', title: '5. Best Practices and Recommendations' },
+                      { id: 'industry-resources', title: '6. Industry-Specific Resources' },
+                      { id: 'vendor-guidance', title: '7. Vendor-Specific Guidance' }
+                    ].map((item, index) => (
+                      <a
+                        key={item.id}
+                        href={`#${item.id}`}
+                        className="block text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2 px-3 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 animate-fade-in-left"
+                        style={{ animationDelay: `${index * 0.1}s` }}
+                      >
+                        {item.title}
+                      </a>
+                    ))}
+                  </nav>
 
-        {/* Content Sections */}
-        <div className="prose prose-lg max-w-none dark:prose-invert">
-          <section id="introduction" className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">1. Introduction to HL7 v2.8 Migration</h2>
-            
-            <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-400 p-6 mb-6">
-              <div className="flex items-start">
-                <ExclamationTriangleIcon className="w-6 h-6 text-yellow-600 dark:text-yellow-400 mr-3 mt-1" />
-                <div>
-                  <h3 className="text-lg font-semibold text-yellow-800 dark:text-yellow-200 mb-2">Important Notice</h3>
-                  <p className="text-yellow-700 dark:text-yellow-300">
-                    HL7 v2.8 represents a significant evolution in healthcare data exchange standards. This migration requires careful planning, thorough testing, and comprehensive understanding of the changes introduced.
-                  </p>
-                </div>
-              </div>
+                  <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
+                    <h3 className="font-semibold text-gray-900 dark:text-white mb-3">Quick Actions</h3>
+                    <div className="space-y-2">
+                      <Link href="/tools/risk-assessment">
+                        <Button variant="outline" size="sm" className="w-full justify-start">
+                          Risk Assessment
+                        </Button>
+                      </Link>
+                      <Link href="/reference/comparison-matrix">
+                        <Button variant="outline" size="sm" className="w-full justify-start">
+                          Version Comparison
+                        </Button>
+                      </Link>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
+          </div>
 
-            <p className="text-gray-700 dark:text-gray-300 mb-4">
-              HL7 v2.8 introduces several enhancements and modifications to improve interoperability, data quality, and clinical workflow integration. This comprehensive guide provides healthcare organizations, IT professionals, and integration specialists with the knowledge and tools necessary for a successful migration.
-            </p>
+          {/* Main Content */}
+          <div className="lg:col-span-3">
 
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Key Migration Objectives</h3>
-            <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 mb-6">
-              <li>Ensure seamless data exchange between systems</li>
-              <li>Maintain data integrity throughout the migration process</li>
-              <li>Minimize downtime and operational disruption</li>
-              <li>Achieve compliance with updated HL7 standards</li>
-              <li>Improve overall system interoperability</li>
-            </ul>
-          </section>
+            {/* Content Sections */}
+            <div className="space-y-12">
+              <section id="introduction" className="animate-fade-in-up">
+                <Card className="overflow-hidden">
+                  <CardHeader className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20">
+                    <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+                      1. Introduction to HL7 v2.8 Migration
+                    </h2>
+                    <p className="text-gray-600 dark:text-gray-300 mt-2">
+                      Understanding the fundamentals of HL7 v2.8 migration and its importance for healthcare organizations
+                    </p>
+                  </CardHeader>
 
-          <section id="official-docs" className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">2. Official Documentation and Resources</h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md border border-gray-200 dark:border-gray-700">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">HL7 International</h3>
-                <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-                  <li>• Official HL7 v2.8 Standard Documentation</li>
-                  <li>• Implementation Guides and Best Practices</li>
-                  <li>• Conformance Profiles and Message Definitions</li>
-                  <li>• Migration Tools and Utilities</li>
-                </ul>
-              </div>
-              
-              <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md border border-gray-200 dark:border-gray-700">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Regional Authorities</h3>
-                <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-                  <li>• Country-specific implementation guidelines</li>
-                  <li>• Regulatory compliance requirements</li>
-                  <li>• Certification and validation processes</li>
-                  <li>• Local support and training resources</li>
-                </ul>
-              </div>
-            </div>
+                  <CardContent className="prose prose-lg max-w-none dark:prose-invert">
+                    <Card className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-400 mb-6">
+                      <CardContent className="p-6">
+                        <div className="flex items-start">
+                          <ExclamationTriangleIcon className="w-6 h-6 text-yellow-600 dark:text-yellow-400 mr-3 mt-1 flex-shrink-0" />
+                          <div>
+                            <h3 className="text-lg font-semibold text-yellow-800 dark:text-yellow-200 mb-2">Important Notice</h3>
+                            <p className="text-yellow-700 dark:text-yellow-300">
+                              HL7 v2.8 represents a significant evolution in healthcare data exchange standards. This migration requires careful planning, thorough testing, and comprehensive understanding of the changes introduced.
+                            </p>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
 
-            <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-400 p-6 mb-6">
-              <div className="flex items-start">
-                <CheckCircleIcon className="w-6 h-6 text-green-600 dark:text-green-400 mr-3 mt-1" />
-                <div>
-                  <h3 className="text-lg font-semibold text-green-800 dark:text-green-200 mb-2">Recommended Resources</h3>
-                  <ul className="text-green-700 dark:text-green-300 space-y-1">
-                    <li>• HL7 v2.8 Standard Specification (Official)</li>
-                    <li>• HL7 v2.8 Implementation Guide</li>
-                    <li>• Migration Planning Toolkit</li>
-                    <li>• Conformance Testing Suite</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </section>
+                    <p className="text-gray-700 dark:text-gray-300 mb-6">
+                      HL7 v2.8 introduces several enhancements and modifications to improve interoperability, data quality, and clinical workflow integration. This comprehensive guide provides healthcare organizations, IT professionals, and integration specialists with the knowledge and tools necessary for a successful migration.
+                    </p>
+
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Key Migration Objectives</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                      {[
+                        'Ensure seamless data exchange between systems',
+                        'Maintain data integrity throughout the migration process',
+                        'Minimize downtime and operational disruption',
+                        'Achieve compliance with updated HL7 standards',
+                        'Improve overall system interoperability',
+                        'Enhanced clinical workflow integration'
+                      ].map((objective, index) => (
+                        <div key={index} className="flex items-start space-x-3 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                          <CheckCircleIcon className="w-5 h-5 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
+                          <span className="text-gray-700 dark:text-gray-300">{objective}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              </section>
+
+              <section id="official-docs" className="animate-fade-in-up animate-delay-200">
+                <Card className="overflow-hidden">
+                  <CardHeader className="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20">
+                    <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+                      2. Official Documentation and Resources
+                    </h2>
+                    <p className="text-gray-600 dark:text-gray-300 mt-2">
+                      Essential documentation and authoritative resources for HL7 v2.8 migration
+                    </p>
+                  </CardHeader>
+
+                  <CardContent>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                      <Card className="border-2 border-blue-200 dark:border-blue-800 hover:border-blue-300 dark:hover:border-blue-700 transition-colors">
+                        <CardHeader>
+                          <h3 className="text-lg font-semibold text-gray-900 dark:text-white flex items-center">
+                            <DocumentTextIcon className="w-5 h-5 mr-2 text-blue-600" />
+                            HL7 International
+                          </h3>
+                        </CardHeader>
+                        <CardContent>
+                          <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
+                            <li className="flex items-start">
+                              <CheckCircleIcon className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                              Official HL7 v2.8 Standard Documentation
+                            </li>
+                            <li className="flex items-start">
+                              <CheckCircleIcon className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                              Implementation Guides and Best Practices
+                            </li>
+                            <li className="flex items-start">
+                              <CheckCircleIcon className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                              Conformance Profiles and Message Definitions
+                            </li>
+                            <li className="flex items-start">
+                              <CheckCircleIcon className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                              Migration Tools and Utilities
+                            </li>
+                          </ul>
+                        </CardContent>
+                      </Card>
+
+                      <Card className="border-2 border-purple-200 dark:border-purple-800 hover:border-purple-300 dark:hover:border-purple-700 transition-colors">
+                        <CardHeader>
+                          <h3 className="text-lg font-semibold text-gray-900 dark:text-white flex items-center">
+                            <UserGroupIcon className="w-5 h-5 mr-2 text-purple-600" />
+                            Regional Authorities
+                          </h3>
+                        </CardHeader>
+                        <CardContent>
+                          <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
+                            <li className="flex items-start">
+                              <CheckCircleIcon className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                              Country-specific implementation guidelines
+                            </li>
+                            <li className="flex items-start">
+                              <CheckCircleIcon className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                              Regulatory compliance requirements
+                            </li>
+                            <li className="flex items-start">
+                              <CheckCircleIcon className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                              Certification and validation processes
+                            </li>
+                            <li className="flex items-start">
+                              <CheckCircleIcon className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                              Local support and training resources
+                            </li>
+                          </ul>
+                        </CardContent>
+                      </Card>
+                    </div>
+
+                    <Card className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-400">
+                      <CardContent className="p-6">
+                        <div className="flex items-start">
+                          <CheckCircleIcon className="w-6 h-6 text-green-600 dark:text-green-400 mr-3 mt-1 flex-shrink-0" />
+                          <div>
+                            <h3 className="text-lg font-semibold text-green-800 dark:text-green-200 mb-3">Recommended Resources</h3>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                              {[
+                                'HL7 v2.8 Standard Specification (Official)',
+                                'HL7 v2.8 Implementation Guide',
+                                'Migration Planning Toolkit',
+                                'Conformance Testing Suite'
+                              ].map((resource, index) => (
+                                <div key={index} className="flex items-center space-x-2">
+                                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                                  <span className="text-green-700 dark:text-green-300">{resource}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </CardContent>
+                </Card>
+              </section>
 
           <section id="technical-differences" className="mb-12">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">3. Technical Differences and Compatibility</h2>
@@ -338,7 +497,10 @@ export default function ComprehensiveGuide() {
             </svg>
           </Link>
         </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </MainLayout>
   )
 }
