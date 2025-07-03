@@ -10,14 +10,16 @@ interface CardProps {
   glow?: boolean
   glass?: boolean
   onClick?: () => void
+  style?: React.CSSProperties
 }
 
 const Card = forwardRef<HTMLDivElement, CardProps>(
-  ({ children, className, hover = false, glow = false, glass = false, onClick }, ref) => {
+  ({ children, className, hover = false, glow = false, glass = false, onClick, style }, ref) => {
     return (
       <div
         ref={ref}
         onClick={onClick}
+        style={style}
         className={cn(
           'rounded-xl border transition-all duration-300',
           {

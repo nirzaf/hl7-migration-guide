@@ -1,8 +1,12 @@
 'use client'
 
-import { useState } from 'react'
+import React, { useState, useMemo, useCallback, memo } from 'react'
 import Link from 'next/link'
 import { ArrowLeftIcon, ExclamationTriangleIcon, CheckCircleIcon, XCircleIcon, InformationCircleIcon } from '@heroicons/react/24/outline'
+import MainLayout from '@/components/layout/MainLayout'
+import Card, { CardContent, CardHeader } from '@/components/ui/Card'
+import Button from '@/components/ui/Button'
+import { riskAssessment } from '@/data/hl7Content'
 
 interface RiskFactor {
   id: string

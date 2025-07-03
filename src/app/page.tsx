@@ -1,45 +1,55 @@
 'use client'
 
-import { useState } from 'react'
+import React, { useState, useMemo, useCallback } from 'react'
 import Link from 'next/link'
 import MainLayout from '@/components/layout/MainLayout'
 import HeroSection from '@/components/sections/HeroSection'
 import QuickAccessSection from '@/components/sections/QuickAccessSection'
 import Card, { CardContent, CardHeader } from '@/components/ui/Card'
 import FloatingActionButton from '@/components/ui/FloatingActionButton'
-
-const searchableContent = [
-  { title: 'Comprehensive Migration Guide', category: 'Documentation', url: '/guide/comprehensive', description: 'Complete guide to HL7 v2.8 migration with detailed technical specifications' },
-  { title: 'Technical Differences', category: 'Technical', url: '/guide/technical-differences', description: 'Detailed comparison between HL7 versions and compatibility issues' },
-  { title: 'Best Practices', category: 'Implementation', url: '/guide/best-practices', description: 'Industry best practices for successful HL7 migration' },
-  { title: 'Risk Assessment', category: 'Planning', url: '/tools/risk-assessment', description: 'Risk assessment template and mitigation strategies' },
-  { title: 'Version Comparison Matrix', category: 'Reference', url: '/reference/comparison-matrix', description: 'Side-by-side comparison of HL7 v2.x versions' },
-  { title: 'EHR Vendor Guidance', category: 'Vendor', url: '/guide/ehr-vendors', description: 'Vendor-specific migration guidance and resources' },
-  { title: 'Message Examples', category: 'Technical', url: '/reference/message-examples', description: 'HL7 v2.8 message structure examples and samples' },
-  { title: 'Resource Planning', category: 'Planning', url: '/tools/resource-planning', description: 'Resource planning template for migration projects' }
-]
+import { searchableContent } from '@/data/hl7Content'
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedCategory, setSelectedCategory] = useState('All')
 
-  const categories = ['All', 'Documentation', 'Technical', 'Implementation', 'Planning', 'Reference', 'Vendor']
+  // Memoize categories to prevent unnecessary re-renders
+  const categories = useMemo(() => {
+    const uniqueCategories = ['All', ...new Set(searchableContent.map(item => item.category))]
+    return uniqueCategories
+  }, [])
 
-  const filteredContent = searchableContent.filter(item => {
-    const matchesSearch = item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         item.description.toLowerCase().includes(searchTerm.toLowerCase())
-    const matchesCategory = selectedCategory === 'All' || item.category === selectedCategory
-    return matchesSearch && matchesCategory
-  })
+  // Memoize filtered content with optimized search
+  const filteredContent = useMemo(() => {
+    return searchableContent.filter(item => {
+      const searchLower = searchTerm.toLowerCase()
+      const matchesSearch = !searchTerm ||
+        item.title.toLowerCase().includes(searchLower) ||
+        item.description.toLowerCase().includes(searchLower) ||
+        item.keywords.some(keyword => keyword.toLowerCase().includes(searchLower))
+
+      const matchesCategory = selectedCategory === 'All' || item.category === selectedCategory
+      return matchesSearch && matchesCategory
+    })
+  }, [searchTerm, selectedCategory])
+
+  // Memoized search handlers
+  const handleSearchChange = useCallback((term: string) => {
+    setSearchTerm(term)
+  }, [])
+
+  const handleCategoryChange = useCallback((category: string) => {
+    setSelectedCategory(category)
+  }, [])
 
   return (
     <MainLayout>
       {/* Hero Section */}
       <HeroSection
         searchTerm={searchTerm}
-        setSearchTerm={setSearchTerm}
+        setSearchTerm={handleSearchChange}
         selectedCategory={selectedCategory}
-        setSelectedCategory={setSelectedCategory}
+        setSelectedCategory={handleCategoryChange}
         categories={categories}
       />
 

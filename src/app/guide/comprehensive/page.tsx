@@ -218,64 +218,34 @@ export default function ComprehensiveGuide() {
                   </CardHeader>
 
                   <CardContent>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                      <Card className="border-2 border-blue-200 dark:border-blue-800 hover:border-blue-300 dark:hover:border-blue-700 transition-colors">
-                        <CardHeader>
-                          <h3 className="text-lg font-semibold text-gray-900 dark:text-white flex items-center">
-                            <DocumentTextIcon className="w-5 h-5 mr-2 text-blue-600" />
-                            HL7 International
-                          </h3>
-                        </CardHeader>
-                        <CardContent>
-                          <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                            <li className="flex items-start">
-                              <CheckCircleIcon className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                              Official HL7 v2.8 Standard Documentation
-                            </li>
-                            <li className="flex items-start">
-                              <CheckCircleIcon className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                              Implementation Guides and Best Practices
-                            </li>
-                            <li className="flex items-start">
-                              <CheckCircleIcon className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                              Conformance Profiles and Message Definitions
-                            </li>
-                            <li className="flex items-start">
-                              <CheckCircleIcon className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                              Migration Tools and Utilities
-                            </li>
-                          </ul>
-                        </CardContent>
-                      </Card>
+                    <div className="text-gray-700 dark:text-gray-300 mb-6 space-y-4">
+                      {comprehensiveGuide.sections[1].content.split('\n\n').map((paragraph, index) => (
+                        <p key={index}>{paragraph}</p>
+                      ))}
+                    </div>
 
-                      <Card className="border-2 border-purple-200 dark:border-purple-800 hover:border-purple-300 dark:hover:border-purple-700 transition-colors">
-                        <CardHeader>
-                          <h3 className="text-lg font-semibold text-gray-900 dark:text-white flex items-center">
-                            <UserGroupIcon className="w-5 h-5 mr-2 text-purple-600" />
-                            Regional Authorities
-                          </h3>
-                        </CardHeader>
-                        <CardContent>
-                          <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                            <li className="flex items-start">
-                              <CheckCircleIcon className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                              Country-specific implementation guidelines
-                            </li>
-                            <li className="flex items-start">
-                              <CheckCircleIcon className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                              Regulatory compliance requirements
-                            </li>
-                            <li className="flex items-start">
-                              <CheckCircleIcon className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                              Certification and validation processes
-                            </li>
-                            <li className="flex items-start">
-                              <CheckCircleIcon className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                              Local support and training resources
-                            </li>
-                          </ul>
-                        </CardContent>
-                      </Card>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                      {comprehensiveGuide.sections[1].subsections?.map((subsection, index) => (
+                        <Card key={subsection.id} className={`border-2 ${index === 0 ? 'border-blue-200 dark:border-blue-800 hover:border-blue-300 dark:hover:border-blue-700' : 'border-purple-200 dark:border-purple-800 hover:border-purple-300 dark:hover:border-purple-700'} transition-colors`}>
+                          <CardHeader>
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white flex items-center">
+                              {index === 0 ? (
+                                <DocumentTextIcon className="w-5 h-5 mr-2 text-blue-600" />
+                              ) : (
+                                <UserGroupIcon className="w-5 h-5 mr-2 text-purple-600" />
+                              )}
+                              {subsection.title}
+                            </h3>
+                          </CardHeader>
+                          <CardContent>
+                            <div className="text-sm text-gray-600 dark:text-gray-400 space-y-3">
+                              {subsection.content.split('\n\n').map((paragraph, pIndex) => (
+                                <p key={pIndex}>{paragraph}</p>
+                              ))}
+                            </div>
+                          </CardContent>
+                        </Card>
+                      ))}
                     </div>
 
                     <Card className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-400">
@@ -317,9 +287,11 @@ export default function ComprehensiveGuide() {
                   </CardHeader>
 
                   <CardContent>
-                    <p className="text-gray-700 dark:text-gray-300 mb-6">
-                      This section outlines the key changes and their implications for your migration project.
-                    </p>
+                    <div className="text-gray-700 dark:text-gray-300 mb-6 space-y-4">
+                      {comprehensiveGuide.sections[2].content.split('\n\n').map((paragraph, index) => (
+                        <p key={index}>{paragraph}</p>
+                      ))}
+                    </div>
 
                     <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Major Changes in v2.8</h3>
 
@@ -330,29 +302,27 @@ export default function ComprehensiveGuide() {
                             <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Component</th>
                             <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Change Type</th>
                             <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Impact</th>
+                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Description</th>
                           </tr>
                         </thead>
                         <tbody className="divide-y divide-gray-200 dark:divide-gray-600">
-                          <tr>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">Message Structure</td>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-400">Enhanced</td>
-                            <td className="px-6 py-4 text-sm text-gray-600 dark:text-gray-400">Improved data organization and validation</td>
-                          </tr>
-                          <tr>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">Data Types</td>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-400">Modified</td>
-                            <td className="px-6 py-4 text-sm text-gray-600 dark:text-gray-400">Updated validation rules and formats</td>
-                          </tr>
-                          <tr>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">Segments</td>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-400">Added/Modified</td>
-                            <td className="px-6 py-4 text-sm text-gray-600 dark:text-gray-400">New segments for enhanced functionality</td>
-                          </tr>
-                          <tr>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">Vocabulary</td>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-400">Expanded</td>
-                            <td className="px-6 py-4 text-sm text-gray-600 dark:text-gray-400">Additional code sets and value domains</td>
-                          </tr>
+                          {technicalDifferences.map((diff, index) => (
+                            <tr key={index} className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors">
+                              <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100">{diff.component}</td>
+                              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-400">
+                                <span className={`px-2 py-1 rounded-full text-xs font-medium ${
+                                  diff.changeType === 'Enhanced' ? 'bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300' :
+                                  diff.changeType === 'Modified' ? 'bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300' :
+                                  diff.changeType === 'Added/Modified' ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300' :
+                                  'bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300'
+                                }`}>
+                                  {diff.changeType}
+                                </span>
+                              </td>
+                              <td className="px-6 py-4 text-sm text-gray-600 dark:text-gray-400">{diff.impact}</td>
+                              <td className="px-6 py-4 text-sm text-gray-600 dark:text-gray-400">{diff.description}</td>
+                            </tr>
+                          ))}
                         </tbody>
                       </table>
                     </div>
@@ -373,44 +343,37 @@ export default function ComprehensiveGuide() {
 
                   <CardContent>
                     <div className="space-y-6">
-                      <Card className="border-l-4 border-blue-500">
-                        <CardContent className="p-6">
-                          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Phase 1: Assessment and Planning</h3>
-                          <ul className="space-y-2 text-gray-700 dark:text-gray-300">
-                            <li>• Conduct comprehensive system inventory</li>
-                            <li>• Identify all HL7 interfaces and dependencies</li>
-                            <li>• Assess current message volumes and patterns</li>
-                            <li>• Evaluate vendor support and upgrade paths</li>
-                            <li>• Develop detailed migration timeline</li>
-                          </ul>
-                        </CardContent>
-                      </Card>
-
-                      <Card className="border-l-4 border-green-500">
-                        <CardContent className="p-6">
-                          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Phase 2: Development and Testing</h3>
-                          <ul className="space-y-2 text-gray-700 dark:text-gray-300">
-                            <li>• Set up development and testing environments</li>
-                            <li>• Implement message transformation logic</li>
-                            <li>• Develop comprehensive test scenarios</li>
-                            <li>• Conduct unit and integration testing</li>
-                            <li>• Validate data integrity and accuracy</li>
-                          </ul>
-                        </CardContent>
-                      </Card>
-
-                      <Card className="border-l-4 border-purple-500">
-                        <CardContent className="p-6">
-                          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Phase 3: Deployment and Monitoring</h3>
-                          <ul className="space-y-2 text-gray-700 dark:text-gray-300">
-                            <li>• Execute phased rollout strategy</li>
-                            <li>• Monitor system performance and stability</li>
-                            <li>• Implement comprehensive logging and alerting</li>
-                            <li>• Provide user training and support</li>
-                            <li>• Establish ongoing maintenance procedures</li>
-                          </ul>
-                        </CardContent>
-                      </Card>
+                      {implementationPhases.map((phase, index) => {
+                        const borderColors = ['border-blue-500', 'border-green-500', 'border-purple-500']
+                        return (
+                          <Card key={phase.id} className={`border-l-4 ${borderColors[index]}`}>
+                            <CardContent className="p-6">
+                              <div className="flex items-center justify-between mb-4">
+                                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                                  {phase.title}
+                                </h3>
+                                <span className="text-sm text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-800 px-3 py-1 rounded-full">
+                                  {phase.duration}
+                                </span>
+                              </div>
+                              <p className="text-gray-600 dark:text-gray-400 mb-4">{phase.description}</p>
+                              <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                                {phase.tasks.map((task, taskIndex) => (
+                                  <li key={taskIndex} className="flex items-start">
+                                    <CheckCircleIcon className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                                    {task}
+                                  </li>
+                                ))}
+                              </ul>
+                              {phase.dependencies && (
+                                <div className="mt-4 text-sm text-gray-500 dark:text-gray-400">
+                                  <strong>Dependencies:</strong> {phase.dependencies.join(', ')}
+                                </div>
+                              )}
+                            </CardContent>
+                          </Card>
+                        )
+                      })}
                     </div>
                   </CardContent>
                 </Card>
@@ -428,50 +391,25 @@ export default function ComprehensiveGuide() {
                   </CardHeader>
 
                   <CardContent>
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                      <div>
-                        <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Technical Best Practices</h3>
-                        <ul className="space-y-3 text-gray-700 dark:text-gray-300">
-                          <li className="flex items-start">
-                            <CheckCircleIcon className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                            Implement comprehensive message validation
-                          </li>
-                          <li className="flex items-start">
-                            <CheckCircleIcon className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                            Use standardized error handling procedures
-                          </li>
-                          <li className="flex items-start">
-                            <CheckCircleIcon className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                            Maintain detailed audit trails and logging
-                          </li>
-                          <li className="flex items-start">
-                            <CheckCircleIcon className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                            Implement robust backup and recovery procedures
-                          </li>
-                        </ul>
-                      </div>
-
-                      <div>
-                        <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Project Management</h3>
-                        <ul className="space-y-3 text-gray-700 dark:text-gray-300">
-                          <li className="flex items-start">
-                            <CheckCircleIcon className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                            Establish clear communication channels
-                          </li>
-                          <li className="flex items-start">
-                            <CheckCircleIcon className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                            Define success criteria and metrics
-                          </li>
-                          <li className="flex items-start">
-                            <CheckCircleIcon className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                            Plan for adequate testing time
-                          </li>
-                          <li className="flex items-start">
-                            <CheckCircleIcon className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                            Prepare comprehensive rollback procedures
-                          </li>
-                        </ul>
-                      </div>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+                      {bestPractices.map((practice, index) => (
+                        <Card key={practice.category} className="border-2 border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-600 transition-colors">
+                          <CardHeader>
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{practice.title}</h3>
+                            <p className="text-sm text-gray-600 dark:text-gray-400">{practice.description}</p>
+                          </CardHeader>
+                          <CardContent>
+                            <ul className="space-y-3 text-gray-700 dark:text-gray-300">
+                              {practice.items.map((item, itemIndex) => (
+                                <li key={itemIndex} className="flex items-start">
+                                  <CheckCircleIcon className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                                  <span className="text-sm">{item}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </CardContent>
+                        </Card>
+                      ))}
                     </div>
                   </CardContent>
                 </Card>
@@ -489,106 +427,99 @@ export default function ComprehensiveGuide() {
                   </CardHeader>
 
                   <CardContent>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                      <Card className="border-2 border-blue-200 dark:border-blue-800">
-                        <CardContent className="p-6">
-                          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Hospitals & Health Systems</h3>
-                          <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-                            <li>• EMR integration guidelines</li>
-                            <li>• Clinical workflow considerations</li>
-                            <li>• Patient safety protocols</li>
-                            <li>• Regulatory compliance</li>
-                          </ul>
-                        </CardContent>
-                      </Card>
-
-                      <Card className="border-2 border-green-200 dark:border-green-800">
-                        <CardContent className="p-6">
-                          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Laboratories</h3>
-                          <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-                            <li>• LIS integration patterns</li>
-                            <li>• Result reporting standards</li>
-                            <li>• Quality control measures</li>
-                            <li>• Specimen tracking</li>
-                          </ul>
-                        </CardContent>
-                      </Card>
-
-                      <Card className="border-2 border-purple-200 dark:border-purple-800">
-                        <CardContent className="p-6">
-                          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Imaging Centers</h3>
-                          <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-                            <li>• PACS integration</li>
-                            <li>• Modality worklist management</li>
-                            <li>• Report distribution</li>
-                            <li>• Image metadata handling</li>
-                          </ul>
-                        </CardContent>
-                      </Card>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                      {industryResources.map((resource, index) => {
+                        const borderColors = [
+                          'border-blue-200 dark:border-blue-800',
+                          'border-green-200 dark:border-green-800',
+                          'border-purple-200 dark:border-purple-800',
+                          'border-orange-200 dark:border-orange-800'
+                        ]
+                        return (
+                          <Card key={resource.industry} className={`border-2 ${borderColors[index]} hover:shadow-lg transition-all duration-200`}>
+                            <CardHeader>
+                              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">{resource.industry}</h3>
+                              <p className="text-sm text-gray-600 dark:text-gray-400">{resource.description}</p>
+                            </CardHeader>
+                            <CardContent>
+                              <div className="mb-4">
+                                <h4 className="text-sm font-medium text-gray-900 dark:text-white mb-2">Resources:</h4>
+                                <ul className="space-y-1 text-sm text-gray-600 dark:text-gray-400">
+                                  {resource.resources.map((item, itemIndex) => (
+                                    <li key={itemIndex} className="flex items-start">
+                                      <CheckCircleIcon className="w-3 h-3 text-green-500 mr-2 mt-1 flex-shrink-0" />
+                                      {item}
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                              <div>
+                                <h4 className="text-sm font-medium text-gray-900 dark:text-white mb-2">Key Considerations:</h4>
+                                <ul className="space-y-1 text-sm text-gray-600 dark:text-gray-400">
+                                  {resource.considerations.map((consideration, consIndex) => (
+                                    <li key={consIndex} className="flex items-start">
+                                      <ExclamationTriangleIcon className="w-3 h-3 text-yellow-500 mr-2 mt-1 flex-shrink-0" />
+                                      {consideration}
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            </CardContent>
+                          </Card>
+                        )
+                      })}
                     </div>
                   </CardContent>
                 </Card>
               </section>
 
-          <section id="vendor-guidance" className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">7. Vendor-Specific Guidance</h2>
-            
-            <p className="text-gray-700 dark:text-gray-300 mb-6">
-              Different vendors may have specific requirements, tools, and procedures for HL7 v2.8 migration. This section provides guidance for working with major healthcare IT vendors.
-            </p>
+              <section id="vendor-guidance" className="animate-fade-in-up animate-delay-700">
+                <Card className="overflow-hidden">
+                  <CardHeader className="bg-gradient-to-r from-gray-50 to-slate-50 dark:from-gray-900/20 dark:to-slate-900/20">
+                    <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+                      7. Vendor-Specific Guidance
+                    </h2>
+                    <p className="text-gray-600 dark:text-gray-300 mt-2">
+                      Vendor-specific resources and support for HL7 v2.8 migration
+                    </p>
+                  </CardHeader>
 
-            <div className="space-y-6">
-              <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md border border-gray-200 dark:border-gray-700">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Integration Engine Vendors</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <h4 className="font-medium text-gray-900 dark:text-white mb-2">Rhapsody Integration Engine</h4>
-                    <ul className="space-y-1 text-sm text-gray-600 dark:text-gray-400">
-                      <li>• Migration toolkit and utilities</li>
-                      <li>• Version compatibility matrix</li>
-                      <li>• Best practice documentation</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-gray-900 dark:text-white mb-2">Other Integration Platforms</h4>
-                    <ul className="space-y-1 text-sm text-gray-600 dark:text-gray-400">
-                      <li>• Vendor-specific migration guides</li>
-                      <li>• Support resources and contacts</li>
-                      <li>• Training and certification programs</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md border border-gray-200 dark:border-gray-700">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">EHR Vendors</h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-4">
-                  Major EHR vendors provide specific guidance and tools for HL7 v2.8 migration. Consult with your vendor for:
-                </p>
-                <ul className="space-y-2 text-gray-700 dark:text-gray-300">
-                  <li>• Upgrade schedules and compatibility timelines</li>
-                  <li>• Migration tools and automated conversion utilities</li>
-                  <li>• Testing environments and validation procedures</li>
-                  <li>• Support during migration and post-implementation</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-        </div>
-
-        {/* Navigation */}
-        <div className="flex justify-between items-center mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
-          <Link href="/" className="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
-            <ArrowLeftIcon className="w-5 h-5 mr-2" />
-            Back to Home
-          </Link>
-          <Link href="/guide/technical-differences" className="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
-            Next: Technical Differences
-            <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </Link>
-        </div>
+                  <CardContent>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                      {vendorGuidance.map((vendor, index) => (
+                        <Card key={vendor.vendor} className="border-2 border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-600 transition-colors">
+                          <CardHeader>
+                            <div className="flex items-center justify-between">
+                              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{vendor.vendor}</h3>
+                              <span className="text-xs bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 px-2 py-1 rounded-full">
+                                {vendor.category}
+                              </span>
+                            </div>
+                            <p className="text-sm text-gray-600 dark:text-gray-400">{vendor.description}</p>
+                          </CardHeader>
+                          <CardContent>
+                            <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                              {vendor.resources.map((resource, resourceIndex) => (
+                                <li key={resourceIndex} className="flex items-start">
+                                  <CheckCircleIcon className="w-3 h-3 text-green-500 mr-2 mt-1 flex-shrink-0" />
+                                  {resource}
+                                </li>
+                              ))}
+                            </ul>
+                            {vendor.contactInfo && (
+                              <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+                                <p className="text-xs text-gray-500 dark:text-gray-400">
+                                  <strong>Contact:</strong> {vendor.contactInfo}
+                                </p>
+                              </div>
+                            )}
+                          </CardContent>
+                        </Card>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              </section>
             </div>
           </div>
         </div>
