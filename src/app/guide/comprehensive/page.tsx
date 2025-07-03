@@ -1,5 +1,6 @@
 'use client'
 
+import React, { memo, useMemo } from 'react'
 import Link from 'next/link'
 import { ArrowLeftIcon, DocumentTextIcon, ExclamationTriangleIcon, CheckCircleIcon, ClockIcon, UserGroupIcon } from '@heroicons/react/24/outline'
 import MainLayout from '@/components/layout/MainLayout'
@@ -7,18 +8,90 @@ import Card, { CardContent, CardHeader } from '@/components/ui/Card'
 import Button from '@/components/ui/Button'
 import ProgressIndicator from '@/components/ui/ProgressIndicator'
 import FloatingActionButton from '@/components/ui/FloatingActionButton'
+import {
+  comprehensiveGuide,
+  technicalDifferences,
+  implementationPhases,
+  bestPractices,
+  industryResources,
+  vendorGuidance
+} from '@/data/hl7Content'
 
-const sections = [
-  { id: 'introduction', title: '1. Introduction to HL7 v2.8 Migration' },
-  { id: 'official-docs', title: '2. Official Documentation and Resources' },
-  { id: 'technical-differences', title: '3. Technical Differences and Compatibility' },
-  { id: 'implementation', title: '4. Implementation Guidelines' },
-  { id: 'best-practices', title: '5. Best Practices and Recommendations' },
-  { id: 'industry-resources', title: '6. Industry-Specific Resources' },
-  { id: 'vendor-guidance', title: '7. Vendor-Specific Guidance' }
-]
+// Memoized section navigation component
+const SectionNavigation = memo(({ sections }: { sections: Array<{ id: string; title: string }> }) => (
+  <nav className="space-y-3">
+    {sections.map((item, index) => (
+      <a
+        key={item.id}
+        href={`#${item.id}`}
+        className="block text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2 px-3 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 animate-fade-in-left"
+        style={{ animationDelay: `${index * 0.1}s` }}
+      >
+        {item.title}
+      </a>
+    ))}
+  </nav>
+))
+
+SectionNavigation.displayName = 'SectionNavigation'
+
+// Memoized stats component
+const QuickStats = memo(() => (
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 animate-fade-in-up animate-delay-200">
+    <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+      <div className="flex items-center">
+        <DocumentTextIcon className="w-8 h-8 mr-3" />
+        <div>
+          <div className="text-2xl font-bold">50+</div>
+          <div className="text-blue-100">Pages of Content</div>
+        </div>
+      </div>
+    </div>
+    <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+      <div className="flex items-center">
+        <ClockIcon className="w-8 h-8 mr-3" />
+        <div>
+          <div className="text-2xl font-bold">2-6</div>
+          <div className="text-blue-100">Months Timeline</div>
+        </div>
+      </div>
+    </div>
+    <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+      <div className="flex items-center">
+        <UserGroupIcon className="w-8 h-8 mr-3" />
+        <div>
+          <div className="text-2xl font-bold">All</div>
+          <div className="text-blue-100">Team Roles</div>
+        </div>
+      </div>
+    </div>
+  </div>
+))
+
+QuickStats.displayName = 'QuickStats'
 
 export default function ComprehensiveGuide() {
+  // Memoize sections for performance
+  const sections = useMemo(() => [
+    { id: 'introduction', title: '1. Introduction to HL7 v2.8 Migration' },
+    { id: 'official-docs', title: '2. Official Documentation and Resources' },
+    { id: 'technical-differences', title: '3. Technical Differences and Compatibility' },
+    { id: 'implementation', title: '4. Implementation Guidelines' },
+    { id: 'best-practices', title: '5. Best Practices and Recommendations' },
+    { id: 'industry-resources', title: '6. Industry-Specific Resources' },
+    { id: 'vendor-guidance', title: '7. Vendor-Specific Guidance' }
+  ], [])
+
+  // Memoize key migration objectives
+  const migrationObjectives = useMemo(() => [
+    'Ensure seamless data exchange between systems',
+    'Maintain data integrity throughout the migration process',
+    'Minimize downtime and operational disruption',
+    'Achieve compliance with updated HL7 standards',
+    'Improve overall system interoperability',
+    'Enhanced clinical workflow integration'
+  ], [])
+
   return (
     <MainLayout>
       {/* Page Header */}
@@ -33,43 +106,18 @@ export default function ComprehensiveGuide() {
 
           <div className="animate-fade-in-up">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Comprehensive HL7 v2.8 Migration Guide
+              {comprehensiveGuide.title}
             </h1>
             <p className="text-xl text-blue-100 max-w-3xl">
-              A complete step-by-step guide for healthcare organizations planning to migrate their HL7 v2.x interfaces to HL7 v2.8
+              {comprehensiveGuide.description}
             </p>
+            <div className="mt-4 text-sm text-blue-200">
+              By {comprehensiveGuide.author} • {comprehensiveGuide.date}
+            </div>
           </div>
 
           {/* Quick Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 animate-fade-in-up animate-delay-200">
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-              <div className="flex items-center">
-                <DocumentTextIcon className="w-8 h-8 mr-3" />
-                <div>
-                  <div className="text-2xl font-bold">50+</div>
-                  <div className="text-blue-100">Pages of Content</div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-              <div className="flex items-center">
-                <ClockIcon className="w-8 h-8 mr-3" />
-                <div>
-                  <div className="text-2xl font-bold">2-6</div>
-                  <div className="text-blue-100">Months Timeline</div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-              <div className="flex items-center">
-                <UserGroupIcon className="w-8 h-8 mr-3" />
-                <div>
-                  <div className="text-2xl font-bold">All</div>
-                  <div className="text-blue-100">Team Roles</div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <QuickStats />
         </div>
       </div>
 
@@ -86,18 +134,7 @@ export default function ComprehensiveGuide() {
                   </h2>
                 </CardHeader>
                 <CardContent>
-                  <nav className="space-y-3">
-                    {sections.map((item, index) => (
-                      <a
-                        key={item.id}
-                        href={`#${item.id}`}
-                        className="block text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2 px-3 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 animate-fade-in-left"
-                        style={{ animationDelay: `${index * 0.1}s` }}
-                      >
-                        {item.title}
-                      </a>
-                    ))}
-                  </nav>
+                  <SectionNavigation sections={sections} />
 
                   <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
                     <h3 className="font-semibold text-gray-900 dark:text-white mb-3">Quick Actions</h3>
@@ -150,20 +187,15 @@ export default function ComprehensiveGuide() {
                       </CardContent>
                     </Card>
 
-                    <p className="text-gray-700 dark:text-gray-300 mb-6">
-                      HL7 v2.8 introduces several enhancements and modifications to improve interoperability, data quality, and clinical workflow integration. This comprehensive guide provides healthcare organizations, IT professionals, and integration specialists with the knowledge and tools necessary for a successful migration.
-                    </p>
+                    <div className="text-gray-700 dark:text-gray-300 mb-6 space-y-4">
+                      {comprehensiveGuide.sections[0].content.split('\n\n').map((paragraph, index) => (
+                        <p key={index}>{paragraph}</p>
+                      ))}
+                    </div>
 
                     <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Key Migration Objectives</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                      {[
-                        'Ensure seamless data exchange between systems',
-                        'Maintain data integrity throughout the migration process',
-                        'Minimize downtime and operational disruption',
-                        'Achieve compliance with updated HL7 standards',
-                        'Improve overall system interoperability',
-                        'Enhanced clinical workflow integration'
-                      ].map((objective, index) => (
+                      {migrationObjectives.map((objective, index) => (
                         <div key={index} className="flex items-start space-x-3 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                           <CheckCircleIcon className="w-5 h-5 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
                           <span className="text-gray-700 dark:text-gray-300">{objective}</span>
@@ -273,174 +305,230 @@ export default function ComprehensiveGuide() {
                 </Card>
               </section>
 
-          <section id="technical-differences" className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">3. Technical Differences and Compatibility</h2>
-            
-            <p className="text-gray-700 dark:text-gray-300 mb-6">
-              Understanding the technical differences between HL7 v2.x and v2.8 is crucial for successful migration. This section outlines the key changes and their implications.
-            </p>
+              <section id="technical-differences" className="animate-fade-in-up animate-delay-300">
+                <Card className="overflow-hidden">
+                  <CardHeader className="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20">
+                    <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+                      3. Technical Differences and Compatibility
+                    </h2>
+                    <p className="text-gray-600 dark:text-gray-300 mt-2">
+                      Understanding the technical differences between HL7 v2.x and v2.8 is crucial for successful migration
+                    </p>
+                  </CardHeader>
 
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Major Changes in v2.8</h3>
-            
-            <div className="overflow-x-auto mb-6">
-              <table className="min-w-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg">
-                <thead className="bg-gray-50 dark:bg-gray-700">
-                  <tr>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Component</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Change Type</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Impact</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-200 dark:divide-gray-600">
-                  <tr>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">Message Structure</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-400">Enhanced</td>
-                    <td className="px-6 py-4 text-sm text-gray-600 dark:text-gray-400">Improved data organization and validation</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">Data Types</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-400">Modified</td>
-                    <td className="px-6 py-4 text-sm text-gray-600 dark:text-gray-400">Updated validation rules and formats</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">Segments</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-400">Added/Modified</td>
-                    <td className="px-6 py-4 text-sm text-gray-600 dark:text-gray-400">New segments for enhanced functionality</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">Vocabulary</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-400">Expanded</td>
-                    <td className="px-6 py-4 text-sm text-gray-600 dark:text-gray-400">Additional code sets and value domains</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </section>
+                  <CardContent>
+                    <p className="text-gray-700 dark:text-gray-300 mb-6">
+                      This section outlines the key changes and their implications for your migration project.
+                    </p>
 
-          <section id="implementation" className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">4. Implementation Guidelines</h2>
-            
-            <div className="space-y-6">
-              <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md border border-gray-200 dark:border-gray-700">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Phase 1: Assessment and Planning</h3>
-                <ul className="space-y-2 text-gray-700 dark:text-gray-300">
-                  <li>• Conduct comprehensive system inventory</li>
-                  <li>• Identify all HL7 interfaces and dependencies</li>
-                  <li>• Assess current message volumes and patterns</li>
-                  <li>• Evaluate vendor support and upgrade paths</li>
-                  <li>• Develop detailed migration timeline</li>
-                </ul>
-              </div>
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Major Changes in v2.8</h3>
 
-              <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md border border-gray-200 dark:border-gray-700">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Phase 2: Development and Testing</h3>
-                <ul className="space-y-2 text-gray-700 dark:text-gray-300">
-                  <li>• Set up development and testing environments</li>
-                  <li>• Implement message transformation logic</li>
-                  <li>• Develop comprehensive test scenarios</li>
-                  <li>• Conduct unit and integration testing</li>
-                  <li>• Validate data integrity and accuracy</li>
-                </ul>
-              </div>
+                    <div className="overflow-x-auto mb-6">
+                      <table className="min-w-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg">
+                        <thead className="bg-gray-50 dark:bg-gray-700">
+                          <tr>
+                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Component</th>
+                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Change Type</th>
+                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Impact</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-200 dark:divide-gray-600">
+                          <tr>
+                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">Message Structure</td>
+                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-400">Enhanced</td>
+                            <td className="px-6 py-4 text-sm text-gray-600 dark:text-gray-400">Improved data organization and validation</td>
+                          </tr>
+                          <tr>
+                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">Data Types</td>
+                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-400">Modified</td>
+                            <td className="px-6 py-4 text-sm text-gray-600 dark:text-gray-400">Updated validation rules and formats</td>
+                          </tr>
+                          <tr>
+                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">Segments</td>
+                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-400">Added/Modified</td>
+                            <td className="px-6 py-4 text-sm text-gray-600 dark:text-gray-400">New segments for enhanced functionality</td>
+                          </tr>
+                          <tr>
+                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">Vocabulary</td>
+                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-400">Expanded</td>
+                            <td className="px-6 py-4 text-sm text-gray-600 dark:text-gray-400">Additional code sets and value domains</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </CardContent>
+                </Card>
+              </section>
 
-              <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md border border-gray-200 dark:border-gray-700">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Phase 3: Deployment and Monitoring</h3>
-                <ul className="space-y-2 text-gray-700 dark:text-gray-300">
-                  <li>• Execute phased rollout strategy</li>
-                  <li>• Monitor system performance and stability</li>
-                  <li>• Implement comprehensive logging and alerting</li>
-                  <li>• Provide user training and support</li>
-                  <li>• Establish ongoing maintenance procedures</li>
-                </ul>
-              </div>
-            </div>
-          </section>
+              <section id="implementation" className="animate-fade-in-up animate-delay-400">
+                <Card className="overflow-hidden">
+                  <CardHeader className="bg-gradient-to-r from-orange-50 to-red-50 dark:from-orange-900/20 dark:to-red-900/20">
+                    <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+                      4. Implementation Guidelines
+                    </h2>
+                    <p className="text-gray-600 dark:text-gray-300 mt-2">
+                      Step-by-step implementation phases for successful HL7 v2.8 migration
+                    </p>
+                  </CardHeader>
 
-          <section id="best-practices" className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">5. Best Practices and Recommendations</h2>
-            
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Technical Best Practices</h3>
-                <ul className="space-y-3 text-gray-700 dark:text-gray-300">
-                  <li className="flex items-start">
-                    <CheckCircleIcon className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                    Implement comprehensive message validation
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircleIcon className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                    Use standardized error handling procedures
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircleIcon className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                    Maintain detailed audit trails and logging
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircleIcon className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                    Implement robust backup and recovery procedures
-                  </li>
-                </ul>
-              </div>
-              
-              <div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Project Management</h3>
-                <ul className="space-y-3 text-gray-700 dark:text-gray-300">
-                  <li className="flex items-start">
-                    <CheckCircleIcon className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                    Establish clear communication channels
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircleIcon className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                    Define success criteria and metrics
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircleIcon className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                    Plan for adequate testing time
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircleIcon className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                    Prepare comprehensive rollback procedures
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
+                  <CardContent>
+                    <div className="space-y-6">
+                      <Card className="border-l-4 border-blue-500">
+                        <CardContent className="p-6">
+                          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Phase 1: Assessment and Planning</h3>
+                          <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                            <li>• Conduct comprehensive system inventory</li>
+                            <li>• Identify all HL7 interfaces and dependencies</li>
+                            <li>• Assess current message volumes and patterns</li>
+                            <li>• Evaluate vendor support and upgrade paths</li>
+                            <li>• Develop detailed migration timeline</li>
+                          </ul>
+                        </CardContent>
+                      </Card>
 
-          <section id="industry-resources" className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">6. Industry-Specific Resources</h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md border border-gray-200 dark:border-gray-700">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Hospitals & Health Systems</h3>
-                <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-                  <li>• EMR integration guidelines</li>
-                  <li>• Clinical workflow considerations</li>
-                  <li>• Patient safety protocols</li>
-                  <li>• Regulatory compliance</li>
-                </ul>
-              </div>
-              
-              <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md border border-gray-200 dark:border-gray-700">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Laboratories</h3>
-                <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-                  <li>• LIS integration patterns</li>
-                  <li>• Result reporting standards</li>
-                  <li>• Quality control measures</li>
-                  <li>• Specimen tracking</li>
-                </ul>
-              </div>
-              
-              <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md border border-gray-200 dark:border-gray-700">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Imaging Centers</h3>
-                <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-                  <li>• PACS integration</li>
-                  <li>• Modality worklist management</li>
-                  <li>• Report distribution</li>
-                  <li>• Image metadata handling</li>
-                </ul>
-              </div>
-            </div>
-          </section>
+                      <Card className="border-l-4 border-green-500">
+                        <CardContent className="p-6">
+                          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Phase 2: Development and Testing</h3>
+                          <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                            <li>• Set up development and testing environments</li>
+                            <li>• Implement message transformation logic</li>
+                            <li>• Develop comprehensive test scenarios</li>
+                            <li>• Conduct unit and integration testing</li>
+                            <li>• Validate data integrity and accuracy</li>
+                          </ul>
+                        </CardContent>
+                      </Card>
+
+                      <Card className="border-l-4 border-purple-500">
+                        <CardContent className="p-6">
+                          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Phase 3: Deployment and Monitoring</h3>
+                          <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                            <li>• Execute phased rollout strategy</li>
+                            <li>• Monitor system performance and stability</li>
+                            <li>• Implement comprehensive logging and alerting</li>
+                            <li>• Provide user training and support</li>
+                            <li>• Establish ongoing maintenance procedures</li>
+                          </ul>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </CardContent>
+                </Card>
+              </section>
+
+              <section id="best-practices" className="animate-fade-in-up animate-delay-500">
+                <Card className="overflow-hidden">
+                  <CardHeader className="bg-gradient-to-r from-teal-50 to-cyan-50 dark:from-teal-900/20 dark:to-cyan-900/20">
+                    <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+                      5. Best Practices and Recommendations
+                    </h2>
+                    <p className="text-gray-600 dark:text-gray-300 mt-2">
+                      Industry-proven strategies and recommendations for successful migration
+                    </p>
+                  </CardHeader>
+
+                  <CardContent>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                      <div>
+                        <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Technical Best Practices</h3>
+                        <ul className="space-y-3 text-gray-700 dark:text-gray-300">
+                          <li className="flex items-start">
+                            <CheckCircleIcon className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                            Implement comprehensive message validation
+                          </li>
+                          <li className="flex items-start">
+                            <CheckCircleIcon className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                            Use standardized error handling procedures
+                          </li>
+                          <li className="flex items-start">
+                            <CheckCircleIcon className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                            Maintain detailed audit trails and logging
+                          </li>
+                          <li className="flex items-start">
+                            <CheckCircleIcon className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                            Implement robust backup and recovery procedures
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Project Management</h3>
+                        <ul className="space-y-3 text-gray-700 dark:text-gray-300">
+                          <li className="flex items-start">
+                            <CheckCircleIcon className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                            Establish clear communication channels
+                          </li>
+                          <li className="flex items-start">
+                            <CheckCircleIcon className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                            Define success criteria and metrics
+                          </li>
+                          <li className="flex items-start">
+                            <CheckCircleIcon className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                            Plan for adequate testing time
+                          </li>
+                          <li className="flex items-start">
+                            <CheckCircleIcon className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                            Prepare comprehensive rollback procedures
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </section>
+
+              <section id="industry-resources" className="animate-fade-in-up animate-delay-600">
+                <Card className="overflow-hidden">
+                  <CardHeader className="bg-gradient-to-r from-indigo-50 to-blue-50 dark:from-indigo-900/20 dark:to-blue-900/20">
+                    <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+                      6. Industry-Specific Resources
+                    </h2>
+                    <p className="text-gray-600 dark:text-gray-300 mt-2">
+                      Tailored guidance for different healthcare industry sectors
+                    </p>
+                  </CardHeader>
+
+                  <CardContent>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                      <Card className="border-2 border-blue-200 dark:border-blue-800">
+                        <CardContent className="p-6">
+                          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Hospitals & Health Systems</h3>
+                          <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                            <li>• EMR integration guidelines</li>
+                            <li>• Clinical workflow considerations</li>
+                            <li>• Patient safety protocols</li>
+                            <li>• Regulatory compliance</li>
+                          </ul>
+                        </CardContent>
+                      </Card>
+
+                      <Card className="border-2 border-green-200 dark:border-green-800">
+                        <CardContent className="p-6">
+                          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Laboratories</h3>
+                          <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                            <li>• LIS integration patterns</li>
+                            <li>• Result reporting standards</li>
+                            <li>• Quality control measures</li>
+                            <li>• Specimen tracking</li>
+                          </ul>
+                        </CardContent>
+                      </Card>
+
+                      <Card className="border-2 border-purple-200 dark:border-purple-800">
+                        <CardContent className="p-6">
+                          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Imaging Centers</h3>
+                          <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                            <li>• PACS integration</li>
+                            <li>• Modality worklist management</li>
+                            <li>• Report distribution</li>
+                            <li>• Image metadata handling</li>
+                          </ul>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </CardContent>
+                </Card>
+              </section>
 
           <section id="vendor-guidance" className="mb-12">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">7. Vendor-Specific Guidance</h2>
