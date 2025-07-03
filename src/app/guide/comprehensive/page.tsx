@@ -5,6 +5,18 @@ import { ArrowLeftIcon, DocumentTextIcon, ExclamationTriangleIcon, CheckCircleIc
 import MainLayout from '@/components/layout/MainLayout'
 import Card, { CardContent, CardHeader } from '@/components/ui/Card'
 import Button from '@/components/ui/Button'
+import ProgressIndicator from '@/components/ui/ProgressIndicator'
+import FloatingActionButton from '@/components/ui/FloatingActionButton'
+
+const sections = [
+  { id: 'introduction', title: '1. Introduction to HL7 v2.8 Migration' },
+  { id: 'official-docs', title: '2. Official Documentation and Resources' },
+  { id: 'technical-differences', title: '3. Technical Differences and Compatibility' },
+  { id: 'implementation', title: '4. Implementation Guidelines' },
+  { id: 'best-practices', title: '5. Best Practices and Recommendations' },
+  { id: 'industry-resources', title: '6. Industry-Specific Resources' },
+  { id: 'vendor-guidance', title: '7. Vendor-Specific Guidance' }
+]
 
 export default function ComprehensiveGuide() {
   return (
@@ -75,15 +87,7 @@ export default function ComprehensiveGuide() {
                 </CardHeader>
                 <CardContent>
                   <nav className="space-y-3">
-                    {[
-                      { id: 'introduction', title: '1. Introduction to HL7 v2.8 Migration' },
-                      { id: 'official-docs', title: '2. Official Documentation and Resources' },
-                      { id: 'technical-differences', title: '3. Technical Differences and Compatibility' },
-                      { id: 'implementation', title: '4. Implementation Guidelines' },
-                      { id: 'best-practices', title: '5. Best Practices and Recommendations' },
-                      { id: 'industry-resources', title: '6. Industry-Specific Resources' },
-                      { id: 'vendor-guidance', title: '7. Vendor-Specific Guidance' }
-                    ].map((item, index) => (
+                    {sections.map((item, index) => (
                       <a
                         key={item.id}
                         href={`#${item.id}`}
@@ -501,6 +505,12 @@ export default function ComprehensiveGuide() {
           </div>
         </div>
       </div>
+
+      {/* Progress Indicator */}
+      <ProgressIndicator sections={sections} />
+
+      {/* Floating Action Button */}
+      <FloatingActionButton />
     </MainLayout>
   )
 }

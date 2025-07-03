@@ -6,6 +6,7 @@ import MainLayout from '@/components/layout/MainLayout'
 import HeroSection from '@/components/sections/HeroSection'
 import QuickAccessSection from '@/components/sections/QuickAccessSection'
 import Card, { CardContent, CardHeader } from '@/components/ui/Card'
+import FloatingActionButton from '@/components/ui/FloatingActionButton'
 
 const searchableContent = [
   { title: 'Comprehensive Migration Guide', category: 'Documentation', url: '/guide/comprehensive', description: 'Complete guide to HL7 v2.8 migration with detailed technical specifications' },
@@ -99,44 +100,8 @@ export default function Home() {
         </section>
       )}
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-            <div className="md:col-span-2">
-              <h4 className="text-2xl font-bold mb-4 gradient-text">HL7 Migration Guide</h4>
-              <p className="text-gray-400 mb-4 max-w-md">
-                Comprehensive resources for successful HL7 v2.8 migration. From technical specifications
-                to best practices, we've got you covered.
-              </p>
-            </div>
-
-            <div>
-              <h5 className="font-semibold mb-4">Quick Links</h5>
-              <ul className="space-y-2 text-gray-400">
-                <li><Link href="/guide/comprehensive" className="hover:text-white transition-colors">Migration Guide</Link></li>
-                <li><Link href="/tools/risk-assessment" className="hover:text-white transition-colors">Risk Assessment</Link></li>
-                <li><Link href="/reference/comparison-matrix" className="hover:text-white transition-colors">Version Comparison</Link></li>
-              </ul>
-            </div>
-
-            <div>
-              <h5 className="font-semibold mb-4">Resources</h5>
-              <ul className="space-y-2 text-gray-400">
-                <li><Link href="/guide/best-practices" className="hover:text-white transition-colors">Best Practices</Link></li>
-                <li><Link href="/guide/technical-differences" className="hover:text-white transition-colors">Technical Docs</Link></li>
-                <li><Link href="/tools/resource-planning" className="hover:text-white transition-colors">Planning Tools</Link></li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-800 pt-8 text-center">
-            <p className="text-gray-400">
-              Built with Next.js, TypeScript, and Tailwind CSS • © 2025 HL7 Migration Guide
-            </p>
-          </div>
-        </div>
-      </footer>
+      {/* Floating Action Button */}
+      <FloatingActionButton />
     </MainLayout>
   )
 }
