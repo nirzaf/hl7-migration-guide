@@ -1,0 +1,2455 @@
+National E-Health and Data
+Management Strategy
+Draft for Stakeholder Consultation
+
+Qatar National E-Health & Data Program (QNeDP)
+Prepared by:
+Date:
+Version:
+
+PricewaterhouseCoopers (PwC)
+June 14, 2015
+v2.0
+
+National E-Health and Data Management Strategy
+
+Revision Log
+Version
+Number
+
+Date
+
+Changes
+
+Author
+
+1.0
+
+June 1, 2015
+
+
+
+Initial Release to QNeDP Steering
+Committee and NHS Ministerial Board
+
+PwC Team
+
+2.0
+
+June 14, 2015
+
+
+
+Updates from Steering Committee
+and further internal reviews
+
+PwC Team
+
+Acknowledgements
+The creation, review and refinement of this E-Health and Data Management Strategy would not be
+possible without the extensive contributions of the following organizations and individuals in the table
+below. A special thanks to members of the QNeDP Steering Committee, Data Management Working
+Group, E-Health Working Group and SCH Project Management Office (PMO) for their support and
+guidance throughout the development of this Strategy.
+Organisation
+
+Representatives
+
+Aspetar
+
+
+
+Tom Bell
+
+
+
+Nicola Cranfield
+
+
+
+
+HMC
+
+
+
+Gay Yeap
+
+Stephen Andrews
+
+
+
+Clive Gibbons
+
+Dr. Ali Amer Al-Sanousi
+
+
+
+Paul Halliday
+
+
+
+Carolyn Madigan
+
+
+
+Anupam Gupta
+
+
+
+Saad Mustafa
+
+
+
+Lamia Al-Barghouti
+
+
+
+Gayle Burgoyny
+
+ictQatar
+
+
+
+Ahmed Nawaf
+
+MDPS
+
+
+
+Heap Chuan Tee
+
+NHIC
+
+
+
+Tarek Hachicho
+
+
+
+Fahad Al-Dosari
+
+
+
+Alexandra Tarazi
+
+
+
+Selvakumar Swamy
+
+
+
+Robert Moorhead
+
+
+
+Steven Archer
+
+
+
+Dr. Faleh Mohamed Husain Ali
+
+
+
+Dr. Jamal Rashid Al Khanj
+
+
+
+Eng. Abdulla Al Yafeai
+
+
+
+Dr. Shk. Mohammed Al Thani
+
+
+
+Susan Clelland
+
+
+
+Inthihas Anachintavida
+
+
+
+Irfan Ahmed Syed
+
+
+
+Ken Kai Pong Fan
+
+
+
+Michael Leroy
+
+
+
+Dr. Julio Silva
+
+
+
+Paul Casterton
+
+PHCC
+
+SCH PMO
+
+SCH and NHS
+Programs
+
+SIDRA
+
+i
+
+National E-Health and Data Management Strategy
+
+Table of Contents
+PART I: THE E-HEALTH JOURNEY ............................................................................ 1
+Background ................................................................................................................................ 2
+Current State Assessment.......................................................................................................... 4
+Qatar E-Health Vision................................................................................................................. 7
+Benefits of E-Health ................................................................................................................... 8
+Guiding Principles ....................................................................................................................12
+Conceptual Model....................................................................................................................15
+
+PART II: REALIZING THE VISION ............................................................................ 17
+E-Health and Data Management Governance .........................................................................18
+Legislative and Regulatory Changes.........................................................................................23
+E-Health Blueprint....................................................................................................................26
+Technology Adoption ...............................................................................................................31
+National Standards...................................................................................................................35
+
+PART III: STRATEGIC PLAN (2016 – 2020) ............................................................. 39
+Mission and Goals ....................................................................................................................40
+The Need for Alignment...........................................................................................................42
+Implementation Roadmap .......................................................................................................43
+
+ii
+
+National E-Health and Data Management Strategy
+
+Page intentionally left blank.
+
+iii
+
+National E-Health and Data Management Strategy
+
+PART I: THE E-HEALTH JOURNEY
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 1
+
+National E-Health and Data Management Strategy
+
+BACKGROUND
+In the past decade, the Information Technology (IT) industry has witnessed the
+emergence of several new concepts on the health domain, among them: EHealth (or eHealth), Health 2.0, digital or electronic health, electronic health
+record, digital hospital and many others. Although each of these terms has
+brought its own unique definition and perspectives, they all share the
+recognition that health care and wellness management are inherently
+dependent on having access to the right data at the right time through
+effective use of technology for enhanced patient care and reduction of medical
+errors.
+Until recently, the ability to collect, process and share
+health data was constrained by the lack of
+comprehensive digital capabilities, high cost of
+technologies and the lack of mature policies,
+standards and legislation that would facilitate the use
+of health information to its full potential. With
+today’s technologies, it is now possible to envision
+and deliver on new solutions that address previous
+limitations. In addition, there are many opportunities
+to leverage best implementation practices and
+modern public policies from several E-Health experiences from around the
+world.
+It is with this purpose and understanding that the State of Qatar, under the
+leadership of His Excellency, Minister of Public Health Abdulla bin Khalid Al
+Qahtani, has taken the first concrete steps in an exciting E-Health journey that
+will promote significant changes on how healthcare services are delivered, and
+more importantly, how every individual can be empowered to become an
+active partner in the management of their own health.
+This journey starts with a simple understanding of what E-Health is trying to
+achieve and its scope of influence. For the purpose of this Strategy and all
+subsequent projects in Qatar, E-Health is defined as the:
+
+E-Health Definition
+“Transformative and continuous improvement of
+healthcare through the use of information and
+technologies that support the delivery of healthcare
+and clinical research.”
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 2
+
+National E-Health and Data Management Strategy
+
+E-Health is about
+providing better
+healthcare outcomes
+to the patients; and
+about better
+effectiveness for the
+providers.
+
+Under this definition, E-Health includes most of the information systems, digital
+devices, and data analytics solutions that at some point in time process health
+data. This definition also highlights the fact that
+E-Health is not about the technologies themselves, but rather technology as an
+enabler for the positive change in the healthcare system. E-Health brings
+together the people, processes and health services in a collaborative union
+with a common goal.
+
+Improving healthcare services requires the coordination of
+many moving parts, including well trained people who provide
+the services, modern and efficient processes to make the best
+use of existing resources, and the information systems and
+technologies that bring them all together.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 3
+
+National E-Health and Data Management Strategy
+
+CURRENT STATE ASSESSMENT
+Qatar has a well-developed healthcare infrastructure, comprising both the
+public and private sectors. Key aspects of the healthcare services in the country
+include:
+
+
+A significant participation of the eight government hospitals in the delivery
+of healthcare services managed by Hamad Medical Corporation (HMC);
+
+
+
+More than 30 government clinics managed by Primary Health Care
+Corporation (PHCC) that are being re-designed to be the cornerstone of a
+new Integrated Health Model for health care;
+
+
+
+World renowned specialist centers and hospitals such as Aspetar and Sidra;
+
+
+
+A recently established and evolving health insurance scheme that is
+transforming how services are funded in the country; and
+
+
+
+The Supreme Council of Health (SCH), as regulator, leading an E-Health
+agenda to improve the health outcomes through the integration of the
+public and private providers and a greater participation of patients in their
+wellness management.
+
+Many of these organizations are still providing healthcare supported by paperbased processes and lack the required systems to connect to one another.
+Without focused investment to transform its services through the introduction
+of information and communications technology, Qatar will be unable to meet
+the expectations and demands for excellent health care in the future. The
+impacts of an ageing population, chronic and complex conditions, and
+workforce constraints are all putting pressure on health services to deliver
+more effective healthcare with the current resources.
+Qatar’s strategy to deliver a world-class health care has been impacted by the
+following four key issues which have been identified as typically affecting
+clinical service delivery in paper-based environments:
+1.
+
+Safety and Quality: Paper based records, poor integration of systems
+and lack of information exchanges put at risk the patient’s safety and
+hinder health service quality.
+
+2.
+
+Effectiveness: Lack of digital data results delays or prevents access to the
+health data needed for clinical care and incurs significant overhead costs
+as a result of the time wasted looking for information.
+
+3.
+
+Decision Support and Research: Questionable data quality and absence
+of data analytics capabilities at a national level result in limited
+evidenced based decision support and lack of health data for research.
+
+4.
+
+Access and Capacity: The lack of integration between facilities and
+external services has a negative impact to service access and capacity.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 4
+
+National E-Health and Data Management Strategy
+
+A recent study commissioned by the SCH on the current state of E-Health in
+Qatar shows that while there are indeed some areas where E-Health has been
+successfully used as a key enabler in the delivery of healthcare, a broad,
+cohesive, national agenda and capability are still lacking.
+
+E-Health and data
+management maturity
+levels of health-related
+organisations in Qatar
+(PwC Report, 2015)
+
+On a very positive note, there is a strong willingness to pursue a national EHealth agenda among most healthcare providers in the country. This suggests
+that most stakeholders in the health sector have a very positive view towards
+accelerating the adoption of a formal national E-Health Strategy.
+However, a common observation throughout the survey is the lack of ability for
+many organizations to implement E-Health solutions effectively. This is largely
+due to limited access to skilled and seasoned resources with experience and
+expertise in system implementation and change management practices. The
+focus, however, should not be solely on technical resources, but to invest in
+clinical expertise to ensure clinical buy-in and to assist in change management
+and adoption in the healthcare sector.
+The current state of data management across the health sector in Qatar also
+presents many challenges and is a key focal area for improvement. In general,
+organizations have only recently begun to look at the various concerns that
+impact the full data life cycle, including a greater focus on data quality, data
+stewardship, data sharing, audit and retention.
+E-Health has an ability to transform how health care is delivered, but it also
+requires strong clinical adoption to be successful. Experience from other
+countries suggests that clear focus needs to be equally placed on technical,
+clinical and patient perspectives to ensure that the full benefits can be realized.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 5
+
+National E-Health and Data Management Strategy
+
+The specific observations from the report have been grouped according to the
+four pillars that will be used in defining the E-Health strategy:
+Policy and Governance: Covers aspects of organizations, policies and
+standards that will need to be established to support the E-Health vision;
+Technology and Services: Covers the actions required to prepare the
+technical services, systems and telecommunication networks required;
+People and Training: Covers the plans to ensure that there will be
+sufficient qualified people to implement, maintain and enhance the EHealth Vision; and
+Communications and Adoption: Covers the communication activities,
+channels and incentives that will be used to promote the awareness and
+adoption of E-Health solutions.
+
+Overall, the healthcare system in Qatar seems prepared and willing to begin
+the transformation from a mostly paper-based, non-integrated care to a
+new model of integrated care that leverages innovation, quality data and
+advanced technology solutions.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 6
+
+National E-Health and Data Management Strategy
+
+QATAR E-HEALTH VISION
+As the State of Qatar begins its E-Health journey, it is essential that everyone
+involved share a common vision to help guide investments and activities in the
+sector. The vision must reflect the needs and expectations of the various
+people and organizations that will be affected, at all levels, by the E-Health
+solutions that will be adopted in the country.
+After consultation with key health stakeholders, the vision statement for
+E-Health in the State of Qatar has been defined as:
+
+A world-class, sustainable, integrated and
+secure national E-Health ecosystem for
+the State of Qatar.
+This vision describes desired characteristics of the E-Health destination. It
+brings to light Qatar’s desire to become a world leader in the adoption, use and
+development of innovative solutions. It also highlights that the entire
+ecosystem be sustainable, allowing organizations to plan effectively and with
+confidence, knowing that a national E-Health capability will be supported for
+years to come. Additionally, the vision establishes that E-Health is not about a
+single system or solution, but is in fact a national ecosystem that provides a
+secure backdrop for the integration of systems and health data across the
+country for all participants, including achieving a “Personal Health Account” to
+provide patient access to their health data. It is not possible to build a modern,
+integrated health system without a fully connected environment, where
+information can be shared and flow securely across all care settings, whether at
+a hospital, clinic, and laboratory or even at our homes.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 7
+
+National E-Health and Data Management Strategy
+
+BENEFITS OF E-HEALTH
+Change to existing methods and practice comes at a price, but also comes with
+expected benefits that will help increase patient safety, reduce overall system
+costs and provide better accountability to health system participants. More
+succinctly, benefits are expected in five key areas as outlined below.
+
+Better Health Outcomes
+Access to quality data in a timely fashion will allow health care providers to
+better assess and treat their patients. Today, digital data is not readily
+available outside of the organizations that collected them, and even within
+organizations, the use of paper leads to significant and potentially fatal errors.
+Sharing this data electronically internally and across organizations will provide
+a more fulsome account of a patient’s condition, where and why they were
+treated, and an ability to better avoid errors and to manage treatment plans
+and outcomes.
+A focus on data quality will also increase the amount of coded data available to
+the E-Health ecosystem. This coded data will provide better insights into a
+patient’s health status and allow the use of new, advanced decision support
+tools. Moreover, coded data will support advanced analytics and key
+performance indicators that will allow health regulators to gain critical
+knowledge on patient treatment plans and outcomes, directing treatments that
+will better serve patients and improve health outcomes, while driving greater
+efficiency in the system.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 8
+
+National E-Health and Data Management Strategy
+
+Better health outcomes are not just achieved by having more informed
+healthcare providers. Patients will have access to important aspects of their
+health services through a Personal Health Account. This service will empower
+patients to take better care of themselves through views tailored to their
+condition.
+With the proliferation of personal health monitoring devices in the
+marketplace, a patient will also have an ability to upload data such as exercise
+regimes and heart rate readings to their Personal Health Account. Their health
+care providers will then be able to combine this data with other data already
+present in their records and shared through the national systems to monitor
+progress against fine-tuned treatment plans.
+
+Increased Patient Safety
+Medical errors are often too common due to the lack of timely and quality
+health data. As a consequence, patients routinely suffer from duplicate
+therapy, drug overutilization and improper procedures. Aggregating and
+analyzing this data at a national level will help promote improved patient safety
+and a reduction in avoidable medical errors.
+This benefit is especially true for medication related errors, which have been
+shown in international research (e.g. Singapore and Australia) to represent
+between 50%-70% of savings created by national E-Health programs. The main
+reason is that avoiding adverse drug events directly results in a fewer number
+of patients being admitted to hospitals.
+A high priority is therefore the establishment of a national medication record
+for each individual. Also known as an “all drugs, all people” solution, this
+capability allows for drug interaction checking for prescribed medication
+against the patient’s existing drug regimen. When a patient presents at a
+health care institution, a medication profile can be obtained to provide insights
+into the patient’s health status. Over the counter and out of country drugs
+taken by the patient can also be collected by the solution to further reduce the
+number of adverse events.
+Another E-Health example that increases patient safety is a consolidation of
+patient identity management capabilities. Medical errors are made when a
+patient’s previous medical history cannot be obtained. This often is the result
+of multiple identifiers for a patient that are not properly cross-referenced,
+resulting in some records being missed when aggregating health data for
+treatment. A national person registry for health provides a reliable cross
+reference and helps ensure that all patient records are properly linked. Having
+a national personal identifier helps greatly this task and fortunately that is
+already available in Qatar.
+
+More Effective and Integrated System(s)
+A great share of the health care in Qatar is provided by two government
+entities, Hamad Medical Corporation (HMC) and Primary Health Care
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 9
+
+National E-Health and Data Management Strategy
+
+Corporation (PHCC). Patients being treated by these organizations will soon
+enjoy the benefits of the integrated system that is being implemented jointly
+by the two organizations. When Sidra opens, patients will also benefit from a
+similar high-quality solution that will be connected to the HMC/PHCC system.
+If today the majority of service is provided by the public sector, it is anticipated
+that in the near future an increasing share of the healthcare services will be
+delivered by the private sector and other companies like community
+pharmacies, dentists, health clinics and others. The same advantages of an
+integrated system environment enjoyed by the public sector should be
+extended to the private sector. This will need to be provided by national level
+services that will enable Qatar to achieve the benefits of E-Health.
+Once this information exchange is established, benefits and efficiencies in the
+health system can be realized. This will include a reduction in the number of
+laboratory tests (based on previous results already being available), lower drug
+prescribing / dispensing requirements (based on medications a patient already
+has in hand) and avoidance of duplicate radiology imaging (based on access to
+a national diagnostic imaging repository), to name a few examples.
+Consolidating other key systems at a national level will also provide for
+additional gains in efficiency. For example, managing consent in a central,
+nationally accessible solution will allow healthcare providers to quickly and
+accurately ensure consent is managed according to regulation. It will also allow
+patients the ability to easily manage their own consent decisions using their
+Personal Health Account applications.
+Another example of integrated systems is the health insurance industry.
+Capturing clinical data is important to patient safety and patient care. When
+this same data (or a subset of this data) can automatically be attached to a
+health claim, it can bring efficiency to the system through a reduction in
+duplication of data entry. This has been proven in numerous countries where
+dispense data, captured to support a medication history for a patient, is used in
+a seamless fashion with health insurance to cover drug costs for patients.
+
+Access to Better Quality Data
+Aggregating data and building national E-Health services and systems will have
+limited impact without a focus on data quality. This attention begins with
+establishing a national Data Quality program based on a robust and
+comprehensive framework, supported by education and training of the
+workforce, and by implementing feedback mechanisms to ensure continual
+improvement. Making decisions on data of dubious quality can lead to
+healthcare expenses that may have little to no effect, in some extreme cases,
+negative impact on the patient population. It has been estimated, for example,
+that up to 4% of hospital visits can be avoided by enhancing best practices,
+data quality and guidelines in the outpatient settings.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 10
+
+National E-Health and Data Management Strategy
+
+An emphasis on standardized coded data will also enable decision support and
+enhanced data analytics services to help direct funding to areas of national
+importance and priority, measuring effectiveness of programs to deal with each
+condition. Literature studies suggest, for example, that data-based decision
+support systems for diabetes can lead to 20% reduced costs.
+Not only does the emphasis on data quality support directed healthcare
+spending, it also supports a strong clinical research capability of national
+importance in Qatar.
+
+Development of a Knowledge Industry
+A systemic national approach to developing local talent in Qatar is essential to
+establish a sustainable E-Health program. The greater availability of trained
+professionals coupled with incentive programs for the R&D of E-Health
+innovation will create and foster a knowledge industry that can develop and
+bring to market solutions that will improve health care.
+The implementation of a national digital healthcare infrastructure will
+encourage entrepreneurs and investors in Qatar to focus their efforts on the
+healthcare market– either by creating unique local solutions, or by importing
+applications that have been successfully used in other countries.
+This can range from new applications to monitor a patient’s health, to
+providing key reminders for appointments based on key indicators, to
+supporting better care through sharing of data across health care providers. As
+Consumer E-Health is expected to become a double-digit billion dollar industry
+very soon, creating a vibrant E-Health ecosystem that foments and rewards
+research and development of local technology will uniquely position Qatar to
+become a recognized leader in this exciting field.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 11
+
+National E-Health and Data Management Strategy
+
+GUIDING PRINCIPLES
+The implementation of the E-Health Strategy will involve dozens of decisions
+and compromises. In order to ensure that these are consistently aligned with
+the essential goals of this Strategy, it is necessary to define key guiding
+principles, for both E-Health and Data Management future project as described
+below.
+
+Seven key guiding principles that guide and frame the National
+E-Health Program:
+1. It is important to demonstrate benefits to individuals, showing how
+E-Health can help them to be healthy, how to access the healthcare
+system, and how to be informed about things that are important to their
+overall wellness.
+2. Generating positive value to healthcare practitioners and provider
+organizations recognizes the vital role these professionals play in delivering
+quality health care. Providing visible benefits to these stakeholders is an
+important pre-requisite to promote interest, adoption and change.
+3. Promoting solutions that are right for Qatar’s need, recognizing the size
+and capabilities of the country, leveraging existing organizations and
+solutions and respecting the unique cultural characteristics of its
+population.
+4. Enabling strong collaboration across all members of the health community
+will help promote and accelerate the adoption of standards and solutions
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 12
+
+National E-Health and Data Management Strategy
+
+5. The Qatar National Vision 2030 includes a significant focus on developing
+local knowledge and expertise through research and innovation. E-Health
+can play a significant role in this goal if the right incentives are made
+available to entrepreneurs and health researchers.
+6. In order to ensure sustainability of the E-Health program, the Strategy
+needs to develop the required E-Health skills among healthcare
+practitioners and for attracting qualified professionals.
+7. Finally, E-Health is not an end in itself, rather it is a supportive
+technological fabric that will help and accelerate the achievement of
+national health goals established by the NHS (National Health Strategy).
+Similarly, in addition to these six E-Health principles, five additional principles
+provide the direction to be followed in all data management activities and
+plans.
+
+1. A focus on data quality is paramount to the success of an E-Health
+ecosystem. Making informed decisions on patient safety through
+confidence in the underlying data from multiple organizations will help
+ensure maximum benefit to the health system while at the same time
+minimizing errors made with incomplete or unreliable data.
+2. Data governance ensures that there is accountability and focus on data
+usage across the full health ecosystem. It includes oversight on data
+sharing policies as they relate to sensitive patient date.
+3. A system of policies, regulations and legislation will cover the protection of
+sensitive patient data for multiple purposes including primary, secondary
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 13
+
+National E-Health and Data Management Strategy
+
+and tertiary care and health analytics. In addition, the securing of this
+information from external parties will help build confidence in the E-Health
+system in order to maximize health system benefits.
+4. Terminologies provide the basis to derive meaning and knowledge from
+health data, especially to transform textual data into codified terms.
+Active management of terms and the establishment of a terminology
+authority (or National Product Center) will help ensure that terminologies
+are maintained appropriately.
+5. As with the E-Health Guiding Principles, a sustainable E-Health ecosystem
+needs to define, attract and build the necessary data management skills
+and capabilities in a local workforce.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 14
+
+National E-Health and Data Management Strategy
+
+E-HEALTH CONCEPTUAL MODEL
+To achieve the E-Health vision that has been agreed, it is necessary that all
+components of the E-Health ecosystem be designed and implemented to work
+collaboratively towards a common goal: better health for all people in Qatar.
+The figure below shows the major components of the E-Health ecosystem that
+will be involved in the execution of this Strategy.
+
+Foundational Services
+
+Each conceptual component represents the various resources, processes and
+technologies that will be impacted, at some form or another, by this Strategy.
+
+Component
+
+Description
+
+Strategy Implication
+
+E-Health and Data
+Management
+Governance
+
+Defines the organizations, roles and
+responsibilities, policies and processes
+of the E-Health Program.
+
+Implementation of E-Health policies and
+organizations is imperative for the launch
+and success of the National Program.
+
+Collection of E-Health resources,
+including people, technologies and
+national services, required to support
+the collection and sharing of health
+information.
+
+Establishment of the national E-Health
+services needs to be prioritized in order.
+Foundational services, repositories and
+systems need to be procured and
+implemented early in the program
+timeline.
+
+All application systems that digitize
+health data at the care delivery points
+of services (e.g. hospital systems,
+pharmacy systems, lab systems, etc.).
+
+The Strategy needs to promote the use
+and adoption of EMR systems in all
+healthcare delivery locations, both private
+and public services.
+
+Collection of consumer health
+applications that include a unified
+personal health record and support
+health self-management services for
+individuals in Qatar.
+
+The PHA is the centerpiece of the
+Strategy, as it is the primary window to
+the E-Health services for all individuals.
+Many of the envisioned benefits require
+active participation of patients and
+caretakers.
+
+Collection of real-time systems that
+monitor specific population-level health
+events (e.g. outbreak detection,
+contagious disease case management,
+system, etc.).
+
+Health surveillance systems depend on
+reliable information from healthcare
+facilities as well as a secure channel for
+direct communication with all providers
+and other emergency response agencies.
+
+Health Information
+Infrastructure
+
+Healthcare Systems
+
+Electronic Medical
+Record (EMR)
+
+Personal Health
+Account (PHA)
+
+Population Health
+Systems
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 15
+
+Data Analytics and Reporting
+
+National E-Health and Data Management Strategy
+
+Component
+
+Description
+
+Strategy Implication
+
+Health Data
+Services
+
+Consists of the collection, quality
+review, aggregation and reporting of
+health-related data for clinical and
+system-wide use.
+
+With the increasing availability of coded
+clinical data, supported by standardized
+terminologies, it will be possible to create
+advanced data analytics services, for both
+clinical and operational health data.
+
+Collection of organizations that
+perform health-specific research (e.g.
+evidence-based protocols, population
+health management, genetics, disease
+prevention, health system
+performance, etc.).
+
+The health research community will be a
+key beneficiary of the E-Health Strategy
+once initial services are operational and
+more high-quality clinical data becomes
+available. However, new policies for the
+use of this data will require patient
+consent.
+
+Collection of organizations, policies and
+processes associated with the payment
+for healthcare services in Qatar.
+
+Significant transformation is under way on
+how healthcare services are funded. NHIC
+is the first organization to collect detailed
+system-wide data, and will benefit from
+the extended capabilities to be provided
+by the national health data services.
+
+Health Research
+Network
+
+Health Insurance
+Funding
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 16
+
+National E-Health and Data Management Strategy
+
+PART II: REALIZING THE VISION
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 17
+
+National E-Health and Data Management Strategy
+
+E-HEALTH AND DATA MANAGEMENT GOVERNANCE
+Strong leadership and commitment by
+government are key factors for the realization
+of the E-Health vision and Strategy. This
+necessarily includes the establishment of an
+empowered governance model with supporting
+operational business functions.
+The E-Health and Data Management Steering
+Committee has provided the leadership and
+guidance needed during the development of
+the E-Health and Data Management Strategy.
+Within its existing structure, the Steering
+Committee has been supported by two working
+groups: E-Health and Data Management. In
+collaboration and in consultation with the
+Working Groups, the QNeDP Project Team
+designed and validated the various components
+of this Strategy.
+To ensure the successful implementation of this
+Strategy over the coming years, a permanent
+governance structure and respective
+operational business functions needs to be
+formally established.
+The proposed governance model is composed of three levels:
+
+
+Strategic: Where overall direction to the E-Health program will be
+established and confirmed;
+
+
+
+Functional: Where committees and groups will entertain specific topics
+such as lab exchange standards, national E-Health blueprint management,
+and clinical coding standards, for example; and
+
+
+
+Operational: Leveraging staff and resources from an E-Health program
+office to support the Strategic and Functional committees.
+
+Strategic Governance
+There are 2 components to strategic governance:
+
+NHS Ministerial
+Board will own the
+E-Health Strategy
+
+
+
+NHS Ministerial Board; and
+
+
+
+National E-Health Board.
+
+The NHS Ministerial Board will act as overall owner of the E-Health Strategy.
+This includes ensuring that the Strategy is acted upon, adjusted to meet
+changing priorities defined by the SCH and other key stakeholders, and
+refreshed on a periodic basis. The NHS Ministerial Board will receive
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 18
+
+National E-Health and Data Management Strategy
+
+recommendations on these matters from the E-Health Department and from
+the National E-Health Board.
+
+National E-Health
+Board will be the
+strategic advisor for
+the E-Health
+Program
+
+A National E-Health Board consisting of representatives from various
+governmental and private sector providers, health insurance organizations and
+academia will be established. The National E-Health Board will help develop
+and confirm overall E-Health priorities and act as an external approval body for
+key E-Health program deliverables. This can include making a recommendation
+to approve a national standard. The current E-Health and Data Management
+Steering Committee will transition to the National E-Health Board.
+
+Functional Governance
+At a functional level, a number of committees will be established to provide
+external oversight to the execution of the E-Health Strategy. These committees
+will consist of a broad range of stakeholders that are drawn together for a
+specific functional purpose. This can include a detailed committee reviewing
+privacy & security standards, laboratory coding and exchange standards, or
+even oversight on the National E-Health Architecture.
+The following committees have been identified:
+
+Qatar National
+Clinical Coding
+Committee (QNCC)
+will transition to a
+new National
+Standards
+Committee
+
+National Standards Committee (NSC) with responsibility for the selection,
+development and maintenance of E-Health and Data Management Standards
+that are required to realize the E-Health vision and implement the National EHealth Blueprint. The NSC will provide coordination and oversight functions
+across a number of domain specific sub-committees. Membership in the NSC
+will initially be drawn from the Qatar National Clinical Coding Committee
+(QNCCC). It will serve as a neutral arbitrator for all standards matters in Qatar.
+Reporting to the NSC, several Standards Sub-Committees will be established
+with stakeholders drawn from across the health sector, covering specific
+standardization matters, including:
+
+
+Data and Coding Standards to manage Data Standards selection and
+changes to these standards;
+
+
+
+Privacy & Security to provide oversight to the management of privacy &
+security standards;
+
+
+
+Technical, to ensure common and shared technical standards such as
+message transport, data types and use of XML (as an example) are properly
+used across all E-Health Standards; and
+
+
+
+Domain sub-committees, struck to cover a broad range of clinical and
+administrative domains such as Pharmacy, Laboratory, Claims, Diagnostic
+Imaging, and others.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 19
+
+National E-Health and Data Management Strategy
+
+These sub-committees will be created on an as-needed basis and may start and
+/ or end at opportune times, including the rollout of Generation 1 and 2
+systems (see Roadmap).
+
+The ARB will be
+responsible for the
+National E-Health
+Blueprint
+
+An Architectural Review Board (ARB) will help refine and provide oversight to
+the execution of the National E-Health Blueprint. The Architecture Review
+Board (ARB) is responsible for validating, recommending and approving
+solutions that support the National E-Health Architecture.
+This includes alignment of the architecture to the strategic goals of the EHealth program, including adherence to enterprise principles, policies,
+standards, and defined industry proven practices are followed. From a support
+perspective, new and existing solutions and changes to existing systems are
+reviewed to ensure they are consistent with the E-Health Strategy.
+
+Operational Governance
+An E-Health
+Department within
+the SCH will be
+established
+
+National
+E-Health and Data
+Management
+Strategy
+
+A new E-Health Department headed by the E-Health Director will be
+established within the SCH. This E-Health Department will lead the E-Health
+Program and will be accountable for the execution of the E-Health Strategy.
+Operational support for the Functional and Strategic committees will be
+provided by the E-Health Department through four different offices:
+
+
+Strategy Office;
+
+
+
+Technology Office;
+
+
+
+Standards Office; and
+
+
+
+Adoption and Innovation Office.
+
+The Strategy Office will oversee the execution of the E-Health Strategy and
+monitor the progress against the Implementation roadmap. A number of
+monitoring and reporting mechanisms will be established by the PMO section
+within the Strategy Office.
+Initially, the Strategy Office will focus on the development and refinement of
+national E-Health and Data Management policies that will guide the program as
+a whole.
+A clear gating process with decision making points will be put in place to ensure
+that only projects are executed that are aligned with the Vision and Strategy.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 20
+
+National E-Health and Data Management Strategy
+
+Benefits Evaluation
+and Realization
+
+Besides monitoring progress, the Strategy Office will also measure the
+realization of the intended benefits of each project across the following five
+dimensions of E-Health Benefits:
+
+
+Better Health Outcomes;
+
+
+
+Increased Patient Safety;
+
+
+
+More Effective and Integrated System(s);
+
+
+
+Access to Better Quality Data; and
+
+
+
+Development of a Knowledge Industry.
+
+The framework that establishes the mechanisms to evaluate the benefits of the
+E-Health Program will be defined by the Adoption and Innovation Office and
+executed by the Strategy Office.
+
+National E-Health
+Blueprint
+
+The Technology Office will plan, direct and maintain the National E-Health
+Blueprint activities in support of the national E-Health Strategy. The
+Architecture Review Board will be established and be responsible for approving
+changes to the National E-Health Blueprint.
+
+National E-Health
+Services and
+Solutions
+
+In addition, the Technology Office will procure, implement and manage
+National E-Health services and solutions included in the National E-Health
+Blueprint. These E-Health services and solutions will need to comply with
+established E-Health standards and policies as defined by the Standards Office.
+
+National E-Health
+Standards and
+Policies
+
+The Standards Office will support the establishment and maintenance of
+National E-Health Standards. This includes the selection of E-Health Standards,
+setting up processes to publish and maintain these standards, and helping to
+ensure proper compliance. Alignment with international standards is also a key
+function within the Standards Office.
+The Standards Office will help establish National Standards for data sets, data
+types, coded data elements (terminology) and data exchange. The Standards
+Office, in consultation with the Standards Sub-Committees and National
+Standards Committee, will develop drafts for consideration. Approvals for EHealth Standards will be through recommendations from the National
+Standards Committee to the E-Health Board and through to the NHS Ministerial
+Board and SCH.
+In addition to defining E-Health Standards, the Standards Office will also help
+establish supporting policies to cover the data management life cycle (creating,
+using, sharing, archiving and destroying data) and the standards management
+lifecycle (standards selection, release management, deprecation).
+
+Support Adoption
+and Engage
+Stakeholders
+
+The Adoption and Innovation Office will support adoption and uptake of key
+outputs from the E-Health department such as E-Health Standards and national
+E-Health services and solutions. Communication material, tools and
+methodologies will be developed and provided by the Adoption and Innovation
+Office to support this function.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 21
+
+National E-Health and Data Management Strategy
+
+The Adoption and Innovation Office will also be responsible for all external
+communications for the E-Health program and will disseminate new services
+and solutions across the country. In addition, it will promote activities in
+support of best practices in respect to change management and training, to
+healthcare stakeholders.
+
+Certification of
+Solutions and
+Organizations
+
+Another key function within the Adoption and Innovation Office is to establish
+clear minimum requirements that must be met to safeguard the eco-system
+and to enhance the ability for organizations to safely and securely exchange
+information. A certification process will be set up certify E-Health solutions and
+organizations against these requirements. Ultimately, organizations will only be
+allowed to participate if the E-Health Solution and the organization using the
+solution are certified. Direction for the certification program will be drawn
+from various E-Health Standards, policies (Standards Office) and underlying
+technical requirements (Technology Office).
+
+Testing and
+Evaluation of New
+Technologies
+
+Finally, this office will also be responsible to monitor and promote the use of
+new, innovative technologies that support the goals of the E-Health Program.
+Using pilot implementations, innovation competitions and other similar
+campaigns, new solutions will be tested and evaluated to determine their
+clinical value, extensibility and integration with the national E-Health services.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 22
+
+National E-Health and Data Management Strategy
+
+LEGISLATIVE AND REGULATORY CHANGES
+Qatar has a comprehensive and fine grained State Legal System. The SCH is the
+highest authority for the supervision of medical care in the State of Qatar. The
+SCH has wide authorities to achieve its role and purpose. Alongside the SCH, in
+matters of importance to the E-Health Program, is the Ministry of Information
+and Communication Technology (MICT), which is the legal regulatory authority
+in the Information and Tele-Communication sector
+in the country.
+Another unique component of the State Legal
+System is the Qatar Financial Centre (QFC)
+legislation and regulation. The QFC may be
+classified as "stand alone jurisdiction". It applies
+its own laws and regulations to the entities
+established in or working through the QFC. Many
+Thirds Party Administrators and Health Insurance
+Companies are QFC registered and regulated
+entities. QFC regulations prevail over State laws
+for those entities registered with the QFC, unless
+there is an express statement to the contrary.
+The national E-Health Program will have to be created and governed within this
+complex legal framework. New laws, policies and regulations will likely need to
+be created to provide the support to establish the organizations, rules and
+requirements, incentives and remedies required to fully execute the E-Health
+Strategy.
+
+Data Privacy Laws
+Qatar does not currently have a specific data protection law. While various
+Qatari laws set out certain rights of privacy relevant to the protection of
+personal data, there are no specific laws or regulations pertaining to data
+protection, protection and management of health data, or data processing
+requirements.
+A Data Privacy Law is currently being developed by the MICT and will provide
+for the first time a comprehensive set of safeguards that defines the rights of
+individuals to decide what can be done with and who may access their personal
+information that has been collected by other parties.
+Alongside this Law, the SCH has also initiated the drafting of a Health Data
+Privacy Law to specifically govern and regulate the rights of Individuals in
+respect to their health data. Such complementary regulation is necessary due
+to the particularly sensitive and personal nature of health data.
+A key cornerstone in both draft laws is the individual’s right to grant or deny
+consent for data sharing and uses beyond the original purpose for which the
+data was collected. Under the principle of express, informed consent, the
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 23
+
+National E-Health and Data Management Strategy
+
+individual must be first educated on the required use of their health data for
+the purpose of healthcare services, and also be advised if that information may
+be used for different purposes in the future (e.g. research, etc.) in the future.
+An explicit consent must be obtained or confirmed before personal health
+information can be collected and processed.
+
+E-Health and Data Management Regulations
+The Supreme Council of Health is the preferred vehicle to regulate E-Health in
+the State of Qatar and house a new entity which will oversee the governance of
+the national E-Health Program. Based on its enabling legislation, the SCH has
+the powers to issue policies, adopt new organizational structures, supervise
+technical systems for health data, and set out policies for systems of control
+within the health care industry.
+These policies will need to address the following areas:
+
+
+Patient Consent Policies: Defining when and how consent to process
+health data should obtained from an individual;
+
+
+
+E-Health Governance: Defining the new organization that will be
+responsible for executing the E-Health Strategy;
+
+
+
+Data Security Policies: Defining security requirements for protecting health
+data (e.g. Business Continuity Management, Risk Management,
+Identification, Authentication and Authorization, etc.);
+
+
+
+Data Management Policies: Defining data lifecycle responsibilities and
+requirements (e.g. Data Ownership / Stewardship, Audit, Creation and
+Collection, Retention and Disposal, Data Quality, etc.);
+
+
+
+Right to Use Policies: Defining the purposes for which health data can be
+used by providers in the direct delivery of care to the patient
+(e.g. “Need to Know” rules); and
+
+
+
+Data Sharing Agreements: Defining the purposes for which health data
+may be shared between organizations and terms of responsibilities that
+must be observed by all custodians of that data.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 24
+
+National E-Health and Data Management Strategy
+
+Whenever appropriate, these policies should leverage and build upon similar
+regulations that may already exist, either within the health sector or possibly
+from other industries as well.
+The development of E-Health policies should also review and align, as much as
+possible, with international best practices and standards.
+
+Note to the reader
+The specific regulatory recommendations will be developed
+during the stakeholder consultations.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 25
+
+National E-Health and Data Management Strategy
+
+E-HEALTH BLUEPRINT
+
+What is the National
+E-Health Blueprint?
+
+Any large construction project requires detailed plans and blueprints. The same
+is true for complex IT integration project such as those that will result from the
+execution of the E-Health and Data Management Strategy. The Qatar National
+E-Health Blueprint is a comprehensive, high-level plan of how to build the
+network of systems, databases and technical services that will constitute the
+integrated Information exchanges. These national services will provide a secure
+and standards-based access to personal health information shared by all
+participating organizations in the Qatar health system.
+The E-Health Blueprint establishes the national enterprise architecture,
+identifying the components, processes, capabilities, and services that will guide
+the planning, design and implementation of national E-Health services.
+
+Why an E-Health
+Blueprint?
+
+Ultimate Goal:
+“better health for all
+people in Qatar”
+
+The healthcare system in the State of Qatar is a complex system with the
+presence of a great number of healthcare providers ranging from large
+governmental healthcare organizations to very small private practices. It is not
+surprising that these providers experience very different levels of
+E-Health maturity and readiness, and very often do not have the capability to
+communicate and share patient information with other organizations.
+Increasing the maturity levels of all these entities and creating the IT services to
+connect them together is a necessary pre-requisite to ultimately improve the
+delivery of healthcare services.
+The E-Health vision clearly recognizes that its goals cannot be achieved through
+a single system or technology solution; it establishes a national ecosystem
+through governed, secure and standardized integration of the many
+information systems that collect and process health data.
+The proposed architecture will allow participants in Qatar’s E-Health ecosystem
+to work collaboratively towards a single goal: “better health for all people in
+Qatar”.
+These components, capabilities and services were prioritized and influenced
+the development of the Implementation Roadmap.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 26
+
+National E-Health and Data Management Strategy
+
+Conceptual View
+The E-Health Architecture conceptual view consists of several components
+grouped into six key building blocks that form the National E-Health Services
+and Solutions:
+
+External Source and Consumer
+Systems
+Integrated Care Workflow
+Management
+Clinical Repositories
+
+The Health
+Information
+Exchange will
+support primary and
+secondary use of PHI
+
+Health Data Services
+Non-Clinical Registries
+Communications/
+Interoperability Services
+
+A main driver of E-Health benefits is improved clinical service delivery with
+fewer errors and better adherence to best practices. Importantly then, the
+External Source and Consumer Systems represent the many clinical
+information systems and their respective organizations that will use the
+national E-Health services to share and use health data:
+
+
+Electronic Medical Record Systems: Represents all information systems
+residing with healthcare providers that are used to collect and process PHI
+(Personal Health Information) at the point of service, including Hospital
+Information Systems, Radiology Information Systems and Lab Information
+Systems, as examples;
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 27
+
+National E-Health and Data Management Strategy
+
+National services to
+support key clinical
+workflows
+integrating
+healthcare delivery
+
+
+
+Population Health Systems: Represents a set of solutions and services that
+will be used to monitor the health status of the Qatari population and
+detect disease outbreaks and abnormal health event patterns;
+
+
+
+Personal Health Account: Represents a set of innovative solutions and
+services that allow individuals to digitally access the health system to
+manage their own health and that of other individuals they may be
+responsible for; and
+
+
+
+Supreme Council of Health, Health Research Network and Health
+Insurance Funding: Represents the organizations that process health data
+for non-clinical purposes (e.g. health system performance evaluation,
+research analysis, claims adjudication, etc.).
+
+Integrated Health Management Services represent a set of functions that
+support clinical workflows across multiple delivery organizations. These
+services use other national E-Health services and repositories to support
+particular clinical workflows:
+
+
+E-Referral Services: Supports standardized referral process to ensure that
+patients are referred to the right practitioner at a healthcare provider that
+is properly licensed to deliver the requested service;
+
+
+
+Virtual Medicine Services: Support various types of delivering health
+services digital such-as E-consultation; and
+
+
+
+Medication Management: Supports the prescribing and dispensing of
+medications by healthcare practitioners including drug interaction
+checking.
+
+Support for other clinical workflows will very likely be added to future versions
+of the E-Health Blueprint as needed.
+
+The use of central
+clinical repositories
+is decided on a
+clinical domain basis
+
+The E-Health Architecture also defines several centralized Clinical Repositories
+holding patient health data related to specific clinical domains. Over time the
+initial list of clinical repositories will be expanded as new data domains become
+a priority to healthcare delivery and research organizations.
+The decision to create a centralized clinical repository (or not) needs to be
+made for each clinical domain. One of the key E-Health guiding principles is to
+make use of local solutions and information and, as much as possible, avoid the
+need for data duplication.
+The clinical repositories can include different types of data:
+
+
+A standardized summary document containing contextualized PHI
+(e.g. discharge summary, visit notes, etc.);
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 28
+
+National E-Health and Data Management Strategy
+
+Health data is the
+most valuable asset
+of the national
+E-Health services
+
+
+
+A complete copy of the clinical record, either as the source system for this
+data or a duplicate copy of the information initially created at one of the
+EMR systems; and
+
+
+
+A simple index entry to existing PHI that includes a brief description of the
+data (i.e. metadata) and a pointer to where (i.e. which EMR) that data can
+be found.
+
+The E-Health Blueprint, in its current version, defines the following clinical
+repositories:
+
+
+Event Repository: Holding information about encounters the patient has
+had with the health system (e.g. visit to a clinician, hospital admission, lab
+and diagnostic tests, etc.);
+
+
+
+Medication Profile Repository: Holding a complete summary of a patient’s
+past and current medications;
+
+
+
+Diagnostic Tests Repositories: Holding information about the various
+diagnostic tests that the patient has had, including:
+o
+
+Diagnostic Imaging (e.g. X-rays, CT scans, ultrasounds, nuclear
+medicine and MRI scans, etc.); and
+
+o
+
+Laboratory Tests (e.g. hematology, immunology, chemistry,
+microbiology, etc.);
+
+
+
+Disease Specific Repositories: Storing information related to a specific
+diagnosis or condition (e.g. cancer, diabetes, COPD, etc.);
+
+
+
+Personal Health Record Repository: Holding personal data entered directly
+by the patient or captured and transmitted by personal medical devices
+(e.g. glucometer, blood pressure monitor, digital scale, etc.); and
+
+
+
+Record Index Repository: Holding information and indices of PHI stored in
+the EMR’s at the various participating organizations.
+
+Some disease specific projects as part of the National Health Strategy 20112016 such as diabetes and cancer project have already designed and
+implemented disease specific repositories collecting PHI related to specific
+diseases. The E-Health Blueprint does not aim at setting up new repositories
+alongside existing ones, but aims at aligning and transitioning existing
+repositories to the E-Health and Data Management Strategy and the E-Health
+Blueprint.
+
+Transforming health
+data into evidencebased knowledge
+
+Health Data Services represent a number of sophisticated systems and tools
+that are designed to anonymize, de-duplicate, aggregate, and analyze the vast
+amount of digital health data created in Qatar. Data analytics has been used
+extensively and successfully in many other industries (e.g. finance, retail, oil
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 29
+
+National E-Health and Data Management Strategy
+
+and gas, etc.) but is still in its infancy in the health sector. Some of the
+challenges lie with the very nature of this data, which is can be described by:
+
+
+Volume of data collected at any moment (quantity);
+
+
+
+Velocity in which this data is created (speed);
+
+
+
+Variety of the various types of data available (specialization); and
+
+
+
+Veracity of the information from a clinical perspective (quality).
+
+These services will provide a common data analytics platform with access, as
+permitted by privacy regulations, to clinical data that is available in the clinical
+repositories and in the local EMRs systems across the country.
+
+Centrally managed
+non-clinical registries
+
+Common integration
+services provide
+communication
+between systems
+
+The Non-Clinical Registries represent a set of reference data sources that are
+needed to properly exchange patient health information. These include:
+
+
+Person Registry: Holding basic person demographic data associate with a
+unique person identifier that is used to link health data across systems;
+
+
+
+Provider Registry: Holding healthcare provider data associated with a
+unique provider identifier that is used to authorize access to data;
+
+
+
+User Registry: Holding security credentials (both individuals and systems)
+that are used to authenticate identities and grant access to services;
+
+
+
+Consent Registry: Holding patient’s consent agreements which must be
+verified by every system before any PHI can be exchanged;
+
+
+
+Health Service Registry: Holding data related to the health services that
+the participating healthcare providers are licensed to offer their patients;
+and
+
+
+
+Terminology Registry: Holding the various standard terminologies (data
+standards or codes) that are used to support the publication, validation
+and processing of coded clinical data.
+
+Communication and Interoperability Services represent the set of systems and
+services that are required to connect, integrate and secure all data exchanges
+between participants. They provide trusted access points that will be the main
+doors into the longitudinal patient history that becomes available once the
+national E-Health services are in operation.
+Protecting Patient Health Information (PHI) is a critical job of the national
+services. Therefore the E-Health Blueprint defines secure communication
+services to secure PHI while it is exchanged by the participating organizations
+and stored within the centralized clinical repositories. In addition,
+anonymization and pseudonymization services will support secondary use of
+PHI by de-identifying it so that it can be used for approved purposes.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 30
+
+National E-Health and Data Management Strategy
+
+TECHNOLOGY ADOPTION
+The availability of quality health information in digital form is an essential prerequisite for achieving the E-Health Vision and benefits. Most health data is still
+processed using paper today and significant effort and investments need to
+occur in order to change this scenario. The adoption of modern, standards
+based IT solutions must take place across everywhere, including government,
+semi-government and public sector organizations.
+The E-Health Program will need to collaborate with the various stakeholders to
+find pragmatic and creative solutions to resolve this issue and accelerate the
+use of digital solutions while implementing the national E-Health services.
+
+Electronic Medical Record Systems
+Use of Electronic
+Medical Records
+Systems is essential
+
+Several governmental and semi-governmental healthcare providers have
+embarked or are planning to embark on various programs to implement EMR
+systems with a defined roadmap. The current implementation of a single, EMR
+system across all HMC hospitals and PHCC sites is the best example of the
+financial and organizational commitment of these entities to automate their
+clinical processes and digitize their health data.
+However, many other providers, mainly within the private sector, do not have
+such systems in place and some don’t even have immediate plans to
+implement them. This situation cannot be allowed to continue, both for the
+quality and safety of healthcare services, but also if the E-Health Vision is to be
+achieved.
+One of the key priorities of the E-Health Program will be to find ways, through a
+combination of incentives and penalties, to accelerate the adoption of
+electronic systems in all organizations that deliver health care in the country. .
+A robust understanding of program benefits is required for designing incentives
+and penalties that promote value generation by stakeholders.
+It will also need to establish the minimum requirements, standards and
+capabilities that these new systems will need to meet in order to become
+participants of the national E-Health services.
+
+Population Health Systems
+As recent outbreaks as MERS, Ebola and SARS have demonstrated, disease
+outbreak can move swiftly and across borders. It is critical to have systems in
+place to help detect, monitor and contain communicable disease in Qatar, and
+indeed, the GCC region.
+Population Health Systems is a category of applications that perform
+continuous, systematic collection, analysis and interpretation of health-related
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 31
+
+National E-Health and Data Management Strategy
+
+data at a population level. This data is used for the planning, implementation,
+and evaluation of communicable disease outbreaks. If an outbreak is detected,
+contact tracing, outbreak management and case management functions are
+used to monitor the outbreak and help ensure the outbreak is contained.
+Population Health Systems also include preventive measures such as managing
+immunizations provided to a patient group (cohort) as part of a vaccination
+program. Many diseases can be prevented and / or mitigated through a
+demonstrated program of vaccination; knowing which patients have received
+specific vaccines can assist in their treatment should it become medically
+necessary.
+
+Note to the reader
+The SCH is currently in the process of acquiring a new
+communicable diseases application that will fulfill many of
+the services expected from this category. More information
+about the new system will be included once the selection
+and contracting processes are completed.
+
+Personal Health Account
+The Personal Health
+Account is the digital
+door to the health
+system and data
+
+The National Health Strategy has as one of its main goals enhancing the
+wellness of the people of Qatar so that a vibrant, healthy, and productive
+society can be established for today, and for the future. To achieve this goal,
+individuals need to be engaged and empowered to manage their own health
+status and that of other people they may be responsible for.
+The Personal Health Account contains a set of innovative solutions and services
+that allow individuals to digitally access the health system and that provide a
+collection of useful health management tools. The Personal Health Account
+aims also at aligning with Qatar’s wider E-Government Strategy and to leverage
+some of the National Services that will be put in place, such as:
+
+
+Single Sign On / Authentication: Utilizing the same set of credentials and
+authentication services used by wider E-Government services; and
+
+
+
+Digital Mail and Personal Vault: supporting secure e-mail communications
+between individuals and the participating organizations.
+
+For example, the Personal Health Account will allow individuals to:
+
+
+Track and assess their health and that of individuals under their care;
+
+
+
+Set health goals together with their provider and record and track their
+progress toward these goals, such as lowering cholesterol levels;
+
+
+
+Make the best use of doctor visits (either at a facility or virtually).
+Individuals can prepare questions for their doctors and share personal
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 32
+
+National E-Health and Data Management Strategy
+
+health information collected by them, (e.g. blood pressure, weight, and
+glucose measurements, etc.);
+
+
+Communicate electronically and securely with their physicians, receiving
+instructions, advices, recalls and other needed information;
+
+
+
+Organize and plan the visits will have with the health system by tracking
+appointments, vaccinations, and preventive or screening requests; and
+
+
+
+Be educated on their health status and treatments via access to reliable
+health encyclopedias and other sources of information.
+
+Most of these functions can be best provided by mobile applications, which is
+the ideal channel in Qatar, given the very high use of smartphones among all
+segments of the population. However, selecting the right mobile application
+can be quite a challenge. There are thousands of health apps available for all
+platforms, but the vast majority is not necessarily beneficial to patients.
+To help individuals chose correctly, the
+PHA will also include a service, called
+Apps Formulary, which will guide
+providers and patients to the best
+solutions. This service provides the
+process and standards for selection and
+regulation of the apps that have been
+tested and accepted for use in Qatar.
+Using a process similar to prescribing
+drugs, clinicians will be able to
+recommend one or more apps to be used
+by their patients. The Apps Formulary
+ensures that these programs work
+properly, are safe to use and can be easily
+downloaded by the patient.
+The Personal Health Account will continue
+to evolve as new and better applications
+become available. The availability of
+quality, standardized data will also
+provide the fertile ground for the
+development of “made in Qatar”
+solutions and innovation.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 33
+
+National E-Health and Data Management Strategy
+
+Virtual Medicine Applications
+Virtual Medicine Applications, also known by the name vHealth, is a new way
+of delivering care by creating disruptive changes at lightning speed. vHealth can
+represent many different solutions, from virtual consultations to Do-It-Yourself
+(DIY) health offerings, and these are just some of the early technologies in use.
+Many other innovative ideas are being developed today that will continue to
+transform health services.
+The initial introduction of vHealth solutions will be made available to patients
+and providers, with the focus on:
+
+
+Enhancing access to quality services;
+
+
+
+Bringing care closer to home; and
+
+
+
+Supporting new models of care.
+
+The figure below shows how this shift from traditional to virtual care is taking
+place.
+
+Healthcare is moving
+from institutions back
+to consumers…
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 34
+
+National E-Health and Data Management Strategy
+
+NATIONAL STANDARDS
+A strong foundation in E-Health Standards will reap significant benefits to the
+health system in Qatar. The establishment and management of numerous EHealth Standards will form a strong underpinning of the E-Health Program.
+Specifically, this element of the Strategy will focus on:
+
+
+Core & Fundamental E-Health Standards;
+
+
+
+Standards Selection;
+
+
+
+Standards Change Management;
+
+
+
+Standards Certification;
+
+
+
+Supporting Policies, Procedures and Standards Governance;
+
+
+
+Operational Support; and
+
+
+
+Initial Standards Recommendations.
+
+Core & Fundamental E-Health Standards
+There are numerous E-Health Standards available today, implemented in
+various parts of the world. These range from HL7, X12, ICD-9 & ICD-10,
+SNOMED CT and ISO, to name a few.
+Health Data Set Standards: These describe data elements for a particular
+clinical or administrative domain such as claims, patient, encounter or EDispense. Health Data Sets (HDS) form the necessary building blocks for a
+comprehensive view of data across the continuum of care.
+Data Standards: For coded data
+elements, the series of valid
+values for data elements such as
+Route of Administration,
+Gender and Diagnosis.
+Terminologies are defined
+against these coded data
+elements and are drawn from
+international code sets, such as
+ICD, SNOMED, LOINC, wherever
+possible.
+Interoperability Profile
+Standards: An interoperability
+profile standard describes the
+data elements that are necessary to support an exchange of information from
+one organization or system to another. Examples include a prescription, lab
+result, diagnostic image or discharge summary.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 35
+
+National E-Health and Data Management Strategy
+
+Privacy and Security Standards: Protecting a patient’s sensitive data is critical
+to ensuring there is faith and trust from patients in the E-Health system. This
+includes managing consent agreements,
+audit and ensuring appropriate controls are
+in place to monitor access.
+
+Standards Selection
+One of the major challenges facing
+organizations is selecting the most
+appropriate E-Health Standard to adopt.
+There are numerous standards focusing on
+terminology, exchange, clinical concepts or privacy and security. There is no
+perfect E-Health Standard that will meet all needs across the spectrum of
+health use cases. Therefore, a pragmatic and systematic approach to selecting
+standards is crucial. This includes:
+
+
+Selecting international standards where there is an exact fit (Adopt);
+
+
+
+Adjusting international standards to meet Qatari needs (Adapt); or
+
+
+
+Developing Qatari standards where no international standard exists
+(Develop).
+
+In almost every case, an existing international standard should be adopted or
+adapted. The good news is there are few situations where new standards are
+necessary. Regardless of adopting, adapting or developing, a structured peer
+review with stakeholders across Qatar is necessary to ensure that all affected
+groups and organizations have their input into selecting the appropriate EHealth Standards for the country.
+
+Standards Change Management
+E-Health Standards are not static and change to reflect new
+methods, new clinical procedures and new disease. When
+SARS struck, new ICD codes were required in order to track the
+outbreak of the disease. Recognizing change to E-Health
+Standards requires implementing structured change
+management processes based on ITIL (Information Technology
+Infrastructure Library) methods. Along with Standards
+Selection, this forms a Standards Management approach that
+not only organizes changes into Releases, but ensures that
+these Releases are structured and published so that they can
+be properly implemented into solutions in a timely fashion.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 36
+
+National E-Health and Data Management Strategy
+
+Standards Certification
+An important consideration in the deployment of E-Health Standards is
+certification of solutions to these standards. An information system that
+cannot properly communicate to a national repository will compromise data
+quality and integrity and call into question any interpretation of that data,
+whether for patient care purposes or health analytics. It is therefore critical
+that a program of conformance testing be put in place to certify solutions
+against critical E-Health Standards. Going further, tying incentives and
+purchase decisions to select only those compliant solutions will help motivate
+software vendors and organizations to pursue certification of their products.
+
+Operation Support
+The establishment of a Standards Office with the E-Health Program will help
+support the Standards Governance committees and the E-Health Standards
+Selection and Standards Change Management functions. Critical roles that are
+required include:
+
+
+Standards Manager, with oversight and responsibility for the Standards
+Office;
+
+
+
+Release Manager, to orchestrate new Releases of E-Health Standards;
+
+
+
+Privacy & Security Analyst(s), to manage privacy & security standards;
+
+
+
+Interoperability Analyst(s), to manage Exchange Standards and
+interoperability profiles;
+
+
+
+Data / Terminology Analyst(s), to manage Data Standards; and
+
+
+
+Help Desk Analyst(s), to respond to standards queries and triage requests
+for change.
+
+Initial Standards Recommendations
+An initial set of E-Health Standards are recommended, subject to further peer
+review and approval by the Standards Governance committees. These include:
+Health Data Sets: Data elements, definitions and data types are drawn from:
+
+
+HL7 (Health Level 7) FHIR (Fast Healthcare Interoperability Resource);
+
+
+
+Claim MDS (Minimum Data Set); and
+
+
+
+MHMDS (Mental Health Minimum Data Set).
+
+Data Standards: Coded values for the Patient and E-Dispense Health Data Sets:
+
+
+ICD-10 AM;
+
+
+
+SNOMED CT; and
+
+
+
+HL7.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 37
+
+National E-Health and Data Management Strategy
+
+Exchange Standards/Interoperability Profiles: Profiles, message and document
+standards:
+
+
+CDA (Clinical Document Architecture);
+
+
+
+IHE-XDS (Cross Enterprise Document Sharing);
+
+
+
+IHE-XDR (Cross Enterprise Reliable Document Sharing)
+
+
+
+IHE-PIX / PDQ (Patient Identity Cross-reference / Demographic Query)
+
+
+
+HL7 FHIR (Fast Healthcare Interoperability Profile).
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 38
+
+National E-Health and Data Management Strategy
+
+PART III: STRATEGIC PLAN (2016 – 2020)
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 39
+
+National E-Health and Data Management Strategy
+
+MISSION AND GOALS
+While the E-Health Vision provides the overall direction, achieving that vision
+will require careful planning and a pragmatic implementation strategy. A series
+of coordinated activities and goals need to be executed concurrently in order
+to move forward towards the desired end state. These missions are the
+cornerstone of the pragmatic implementation of each of the components
+described above. Each mission will be tailored to the opportunities,
+characteristics and constraints present in Qatar.
+The mission statements are grouped according to the 4 pillars of E-Health. The
+mission objectives listed below describe the key activities and deliverables to
+be produced by the E-Health program during its initial 5-year period.
+
+Each of these objectives help provide the inter-related milestones necessary to
+achieve a set of well-defined program goals for that same initial period. In turn,
+these goals form the system-wide conditions that will create the mid and long
+term benefits that were described previously.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 40
+
+National E-Health and Data Management Strategy
+
+In order to evaluate the progress of the E-Health program and adjust as
+needed, several specific goals or targets will be defined and monitored
+according to the implementation roadmap. These targets will be established
+according to a framework structured around three main themes: Digitize,
+Standardize and Integrate. These themes and the specific dimensions to be
+measured for each goal are shown below.
+
+Note to the reader
+The specific goals and targets for the 2016-2020 plan,
+covering Gen-1 and Gen-2 implementations will be
+developed during the stakeholder consultations.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 41
+
+National E-Health and Data Management Strategy
+
+THE NEED FOR ALIGNMENT
+The health IT landscape in Qatar is a dynamic and ever evolving sector and
+many system implementation projects are currently in-flight across both public
+and private sector health organizations. In the absence of national-level vision
+and guidance, it is expected that most of these existing initiatives will not
+necessarily align with the architecture, standards and governance that are been
+brought forward by this Strategy.
+With the launch of the National E-Health Program, alignment of these
+initiatives, within the SCH or led by external entities, is an important task to be
+executed in collaboration with all stakeholders involved. In fact, some of these
+projects may provide the early wins for the National E-Health Program.
+The following initiatives have been identified to date:
+
+
+HMC / PHCC Cerner CIS Rollout;
+
+
+
+National Surveillance Early Warning System;
+
+
+
+National Diabetes Registry;
+
+
+
+National Cancer Registry;
+
+
+
+National Public Health Strategy;
+
+
+
+Laboratory Integration and Standardization ;
+
+
+
+Occupational Health Strategy;
+
+
+
+e-Government Program; and
+
+
+
+NHIC Claims Platform Redesign.
+
+Each of the initiatives above are at different stages of development and will
+require a custom approach to maximize alignment, minimize changes and avoid
+disruptions. It is essential to the success of the National E-Health Program that
+organizations continue improving the health IT infrastructure and the increase
+the level of digitization of health data across all their services.
+Achieving this alignment will require a continuous collaborative effort, led by
+the National E-Health Program, and will need to address the use of E-Health
+Standards, compliance with the E-Health Blueprint and integration with the
+national E-Health services.
+Alignment also includes coordination of the change management activities
+across local and national level projects. As capacity and capabilities are limited
+in the health IT sector, care must be exercised to ensure that expectations on
+results and timelines are compatible with the availability of resources and
+avoid change fatigue among providers and healthcare practitioners.
+Lastly, the National E-Health Program needs to align with international
+standards and the health IT industry offerings and capabilities to ensure that
+Qatar can best leverage leading E-Health solutions from around the world.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 42
+
+National E-Health and Data Management Strategy
+
+IMPLEMENTATION ROADMAP
+The E-Health Vision represents the long term destination, but reaching it
+requires a pragmatic and systematic approach that can ensure the success of
+the journey.
+Realizing the E-Health Vision to its fullest extent and across all organizations is a
+long term journey that will require dedicated planning, commitment and
+execution. Complicating matters is the fact that new technologies are created
+in an ever changing, very dynamic market, where innovation and obsolescence
+cycles are shortening at an incredible rate. In addition, there are a number of
+concurrent initiatives, as noted in the previous section, that need to be
+monitored and reviewed to ensure alignment with national Standards and the
+E-Health Blueprint. To keep up with this constant change while at the same
+time transforming the national healthcare system is a daunting prospect.
+The E-Health Strategy should be implemented via a “benefits-led”
+methodology, which reflects current best practices of large scale health IT
+transformation programs. This enables the project to focus on those
+components of the project that aim to deliver the greatest benefits to all
+stakeholders, including patients, providers and the government. The main
+aspects of such an approach are illustrated below:
+
+Looking at similar initiatives in other countries, a common lesson is that trying
+to do too much at once is a recipe for failure. E-Health projects are by their
+very nature technically complex and require constant attention to change
+management activities. These challenges are directly impacted by the
+ambitious expectations that shape the scope of these projects.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 43
+
+National E-Health and Data Management Strategy
+
+The recommended approach in Qatar is to plan for an incremental evolution of
+the E-Health services that will begin with initial, simpler goals and build on
+these successes as other, more complex services are introduced in the future.
+There are 2 Generations contemplated by the Strategy.
+The prioritization of clinical E-Health capabilities that need to be realized and
+put in place is determined on international best practices and lessons learned.
+Typically, by far the largest value is generated by management of medications
+and drugs in the primary care/outpatient setting.
+Shown in the graphic below is the E-Health benefits assessment conducted in
+Australia estimating that the value of introducing Medication Management
+capabilities could provide up to 2.7 Billion Australian Dollars over a 10-year
+period.
+
+Source: Strategy&
+
+Medication management is also the area where most of the lives are saved by
+avoiding potentially fatal Adverse Drug Events (ADEs). For these reasons, a
+national Medication Management service to be used by pharmacies is the first
+clinical service priority for the program in Qatar, The other clinical service
+elements identified as priority areas include diagnostic imaging and e-referrals.
+The latter element in particular is important to ensure integrated continuity of
+care between different care settings – a priority area identified in the National
+Health Strategy.
+Slated for rollout in Generation 2 are the clinical services around Consumer
+Health and Data Analytics, which will arrive after the other services have
+already been in operation for some time to allow for the collection of
+longitudinal data.
+Each generation will extend for a 3-year schedule, with an overlap during the
+mid-year period, as shown in the simplified timeline diagram below.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 44
+
+National E-Health and Data Management Strategy
+
+Generation-1 (Gen-1)
+The first E-Health generation will introduce the foundational services that need
+to be implemented first at a national level as they are pre-requisites for all
+future capabilities. These include:
+
+Start with
+foundational services
+and priority clinical
+services
+
+
+
+Non-clinical registries;
+
+
+
+Key clinical repositories and integrated health workflow management
+services; and
+
+
+
+National Health Information Exchange (HIE).
+
+The figure below shows the proposed collection of systems and services to be
+implemented as part of the first generation (Gen-1) of E-Health services.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 45
+
+National E-Health and Data Management Strategy
+
+In addition to the HIE and non-clinical registries, a minimum set of clinical
+repositories and process management systems should be delivered in
+conjunction, as these are the services that will effectively deliver tangible
+benefits to the healthcare delivery:
+
+
+Event Repository and Document Repository: These two services, when
+combined, provide a simple but very effective timeline of each time the
+patient has been in contact with the health system and a summary
+document with the key clinical findings, diagnosis and medical advice
+resulting from these encounters.
+
+
+
+Record Index: A general index for any type of clinical data about the
+patient that has been created and published to the HIE. These may be
+records or documents that will remain at each EMR system, and may
+include patient family history, clinical assessments, lab results and many
+others.
+
+
+
+Diagnostic Imaging Repository: A national archive that will contain all
+diagnostic imaging reports, manifests and images that have been created
+in hospitals or imaging clinics across the country. This repository may also
+provide a vendor-neutral image viewer that can be used from any EMR
+system.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 46
+
+National E-Health and Data Management Strategy
+
+Finally, Gen-1 will also include two very important workflow management
+systems to be provided as a centralized service to all applicable healthcare
+sites:
+
+
+E-Referral Management: A system that will receive and coordinate all
+requests for referrals between healthcare providers, including those from
+primary care to specialists, between specialists, from hospitals back to
+general practitioners, long term care and/or home care services.
+
+
+
+Medication Management: A system that will be used across community
+pharmacies, public and private sectors, to manage the medication profile
+for patients. It will provide the combined functions of several systems:
+o
+
+Drug repository (profiles);
+
+o
+
+E-Prescribing and E-Dispensing processing;
+
+o
+
+Drug interaction checking;
+
+o
+
+Pharmacy practice management; and
+
+o
+
+Drugs benefit management (claims).
+
+This system is proposed as a single national E-Health solution to be provided as
+a cloud-service and used by all community pharmacies.
+As described above, the first generation of the E-Health services will deliver
+important foundational functions, not the least being the connection and the
+integration of the many EMRs in use in the country.
+As the Gen-1 solutions are implemented, the E-Health Program will proceed to
+create the E-Health testing and certification services that will ensure that
+products and organizations meet minimum technical requirements before they
+are allowed to participate in the national information exchange.
+Finally, the E-Health Program team will work with the various stakeholders to
+promote and measure the adoption of local and national E-Health systems,
+focusing on the digitization and standardization of clinical data.
+The chart below shows the various activities that will be required to complete
+the implementation of Gen-1, the first E-Health generation.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 47
+
+National E-Health and Data Management Strategy
+
+Generation-2 (Gen-2)
+The second generation (Gen-2) of E-Health services will significantly enhance
+the capabilities provided by the national services. Its main focus will be to fully
+explore and use information already collected and shared through the Gen-1
+services.
+Additionally, Gen-2 will begin to deliver on the goals linked to consumer
+involvement and empowerment. It is here that the full extent of the Personal
+Health Account (PHA) will be provided to everyone in Qatar.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 48
+
+National E-Health and Data Management Strategy
+
+The figure below shows the proposed collection of systems and services to be
+implemented as part of the second generation (Gen-2) of E-Health services.
+
+The health data services is a critical part of the E-Health Blueprint, as it is this
+collection of systems, tools and services that provide the capabilities required
+to best use the newly acquired clinical data. These capabilities will be made
+available to health regulators, care delivery organizations and research centers
+as a national E-Health service.
+New clinical repositories are also planned for the Gen-2 scope, and
+complement those already in delivered during Gen-1. These include:
+
+
+Disease Registries: The first of possibly many disease-specific repositories,
+it will hold a record of all diabetic (and possibly pre-diabetic) individuals in
+Qatar, along with key diabetes management information that has been
+collected and/or presented to the patient.
+
+
+
+Personal Health Record: A national archive that will contain all clinical data
+provided by the individual and not by providers or healthcare
+professionals. This repository will be directly associated with one or more
+of the Personal Health Account applications.
+
+Finally, Gen-2 will add two new workflow management services to the national
+E-Health services: Personal Health Account and Virtual Medicine Applications.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 49
+
+National E-Health and Data Management Strategy
+
+Gen-2 will overlap with the end of Gen-1, and will extend for the last three
+years of the implementation plan. First in the activities for Gen-2 is to evaluate
+the results obtained with the rollout of the first group of E-Health services.
+Given the foundational nature of Gen-1, the evaluation will center on the
+digitization of health data and the adoption of the national E-Health standards.
+Next, the work continues with the definition and establishment of standards
+and the procurement of the Gen-2 solutions.
+These will be the first services available to the general public and consequently,
+social media will play an important part in the communications approach. The
+certification services created during the first phase will also be updated to
+include consumer applications, health data quality metrics and virtual medicine
+solutions. Finally, as the Gen-2 solutions are being implemented, the Program
+team will begin the work to refresh the E-Health Strategy for the following
+period, assessing the results obtained, incorporating new technologies and
+aligning with the new health system strategy at the time. The chart below
+shows in more details the Gen-2 activities that will complete the first 5-years of
+the E-Health Program.
+
+Draft for Stakeholder Consultation , v2.0
+
+Page | 50
+
+
